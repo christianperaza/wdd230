@@ -1,11 +1,99 @@
+<!-- In the index.html document, include: -->
+<!-- the required document type definition -->
 <!DOCTYPE html>
+<!-- html tag with language attribute -->
 <html lang="en">
+
+<!-- the head tag -->
+<!-- In the <head>, include the following: -->
 <head>
+    <!-- the meta charset attribute -->
     <meta charset="UTF-8">
+    <!-- the meta viewport element -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 230</title>
+    <!-- the title element -->
+    <!-- Set the title content to "[Student Name] - WDD 230 - Web Frontend Development" -->
+    <title>Christian Peraza - WDD 230 - Web Frontend Development</title>
+    <!-- the meta description element -->
+    <meta name="description" content="Course Assignment Portal of Christian Pablo Peraza Martínez. It has links to weekly assignments of WDD 230 - Web Frontend Development course. Each week this page will be updated with links to the activities and revisions as assigned.">
+    <!-- the meta author element -->
+    <meta name="author" content="Christian Peraza">
+
+    <!-- CHRISTIAN'S NOTE: the assignment not required a favicon, but I wanted to put it -->
+    <link rel="shortcut icon" href="images/christian_peraza_favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
 </head>
+
+<!-- the body tag -->
 <body>
-    <a href="lesson01/holygrail.html">Lesson 01 - Holy Grail Layouts</a>
+<!-- In the <body>, create a layout using header, nav, main, and footer elements in that order -->
+    <header>
+        <!-- The <header> element contains your optimized profile image img and your name in an h1 tag -->
+        <img src="images/christian_peraza.jpg" alt="Christian Peraza's profile image">
+        <h1>Christian P. Peraza M.</h1>
+    </header>
+
+    <nav>
+    <!-- Include links in the navigation nav named "Home", "Site Plan", "Chamber", "BYU-Idaho", and "Scripture" -->
+        <a href="#">Home</a>
+        <a href="chamber/siteplan.html">Site Plan</a>
+        <a href="chamber/">Chamber</a>
+        <a target="_blank" href="https://degreeportal.byupathway.org/?providerId=8389">BYU-Idaho</a>
+        <a target="_blank" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/7?lang=spa&id=p10-p13#p10">Scripture</a>
+    </nav>
+
+    <main>
+    <!-- The <main> element contains the following: -->
+        <!-- A h2 tag with the words "WDD 230: Web Frontend Development" -->
+        <h2>WDD 230: Web Frontend Development</h2>
+
+        <!-- A section tag with the class attribute named "card" that contains the following: -->
+        <section class="card">
+            <!-- An h3 tag containing "Learning Activities" as text -->
+            <h3>LEARNING ACTIVITIES</h3>
+            <!-- An ul with list items li and anchors a for learning activities that will be populated throughout the the course -->
+            <ul>
+                <li>01 - <a target="_blank" href="week01/holygrail.html">Holy Grail | Layout</a></li>
+                <li>02 - <a href="#"></a></li>
+                <li>03 - <a href="#"></a></li>
+                <li>04 - <a href="#"></a></li>
+                <li>05 - <a href="#"></a></li>
+                <li>06 - <a href="#"></a></li>
+                <li>07 - <a href="#"></a></li>
+                <li>08 - <a href="#"></a></li>
+                <li>09 - <a href="#"></a></li>
+                <li>10 - <a href="#"></a></li>
+                <li>11 - <a href="#"></a></li>
+                <li>12 - <a href="#"></a></li>
+                <li>13 - <a href="#"></a></li>
+                <li>14 - <a href="#"></a></li>
+            </ul>
+        </section>
+
+        <!-- A second section with a class name of "card" that contains the following: -->
+        <section class="card">
+            <!-- An h3 tag containing "Information" as text -->
+            <h3>INFORMATION</h3>
+            <!-- Information placeholders about the weather, number of visits to the page, etc. -->
+            <!-- CHRISTIAN'S NOTE: I decided to put span elements -->
+            <div id="placeholders">
+                <span id="country"></span>
+                <span id="weather"></span>
+                <span id="visits"></span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <!-- The <footer> has two paragraphs p: -->
+        <!-- The first paragraph contains the following: The copyright symbol, current year, name, and state or country -->
+        <p>&#169 <span id="currentYear"></span> | Christian P. Peraza M. | Venezuela</p>
+        <!-- The second paragraph has an id of "lastModified" -->
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/getdates.js" ></script>
 </body>
 </html>
