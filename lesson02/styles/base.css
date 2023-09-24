@@ -24,6 +24,13 @@
     margin-bottom: 0;
 }
 
+.header_subtitle_2 {
+    color: #2f3542;
+    margin-bottom: 5%;
+    text-align: center;
+    grid-column: 1/4;
+}
+
 .card {
     width: 90%;
     margin: 0 auto;

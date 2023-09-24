@@ -9,19 +9,8 @@
     }
 
     .card {
-        display: grid;
-        justify-items: center;
+        display: flex;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
-
-    .card_item1 {
-        grid-column: 1/2;
-    }
-    
-    .card_item2 {
-        grid-column: 1/2;
-    }
-    
-    .card_item3 {
-        grid-column: 1/2;
-    }
-}
