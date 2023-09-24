@@ -1,0 +1,27 @@
+@media (max-width: 700px) {
+    .portal {
+        display: none;
+    }
+
+    .portal_mobile {
+        display: block;
+        background-color: rgb(238, 134, 15);
+    }
+
+    .card {
+        display: grid;
+        justify-items: center;
+    }
+
+    .card_item1 {
+        grid-column: 1/2;
+    }
+    
+    .card_item2 {
+        grid-column: 1/2;
+    }
+    
+    .card_item3 {
+        grid-column: 1/2;
+    }
+}
