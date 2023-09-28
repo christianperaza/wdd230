@@ -143,6 +143,17 @@ main h3 {
     padding: 40px;
 }
 
+.map {
+    width: 100%;
+    display: flex;
+    margin-bottom: 4em;
+}
+
+.map iframe {
+    width: 60%;
+    margin: 0 auto;
+}
+
 /** ------------ FOOTER ------------ **/
 
 footer {
