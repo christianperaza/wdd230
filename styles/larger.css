@@ -13,16 +13,44 @@
         margin-bottom: 20px;
     }
 
+    button {
+        cursor: pointer;
+    }
+
+    .hamburger, button, .area_hamburger {
+        display: block;
+    }
+
     main {
         display: block;
         width: 65%;
     }
 
-    nav {
+    .nav ul {
         flex-direction: column;
+        padding: 0;
+        margin-top: 0;
     }
 
-    nav a {
-        padding: 5px;
+    .nav {
+        display: none;
+        padding-top: 0;
     }
+
+    .nav ul li {
+        margin: 0.5em 0;
+    }
+
+    .nav.active {
+        display: block;
+    }
+
+    .hamburger.dont {
+        display: none;
+    }
+
+    .x.yes {
+        display: block;
+    }
+
 }

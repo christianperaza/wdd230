@@ -31,16 +31,31 @@
     <header>
         <!-- The <header> element contains your optimized profile image img and your name in an h1 tag -->
         <img src="images/christian_peraza.jpg" alt="Christian Peraza's profile image">
+        
         <h1>Christian P. Peraza M.</h1>
+
+        <div class="area_hamburger">
+            <button  class="button">
+                <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                <svg class="x" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                    </svg>
+            </button>
+        </div>
+        
     </header>
 
-    <nav>
+    <nav class="nav">
     <!-- Include links in the navigation nav named "Home", "Site Plan", "Chamber", "BYU-Idaho", and "Scripture" -->
-        <a href="#">Home</a>
-        <a href="chamber/siteplan.html">Site Plan</a>
-        <a href="chamber/">Chamber</a>
-        <a target="_blank" href="https://degreeportal.byupathway.org/?providerId=8389">BYU-Idaho</a>
-        <a target="_blank" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/7?lang=spa&id=p10-p13#p10">Scripture</a>
+        <ul>
+            <li><a class="home" href="#">Home</a></li>
+            <li><a href="chamber/siteplan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a target="_blank" href="https://degreeportal.byupathway.org/?providerId=8389">BYU-Idaho</a></li>
+            <li><a target="_blank" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/7?lang=spa&id=p10-p13#p10">Scripture</a></li>
+        </ul>
     </nav>
 
     <main>
@@ -54,12 +69,12 @@
             <h3>LEARNING ACTIVITIES</h3>
             <!-- An ul with list items li and anchors a for learning activities that will be populated throughout the the course -->
             <ul>
-                <li>01 - <a target="_blank" href="lesson01/holygrail.html">Holy Grail</a></li>
+                <li>01 - <a target="_blank" href="lesson01/holygrail.html">Holy layout</a></li>
                 <li>02 - <a target="_blank" href="lesson02/design-principles.html">Desing Principles Document</a> 
-                    | <a target="_blank" href="lesson02/design.html">Design practice</a></li>
-                <li>03 - <a target="_blank" href="lesson03/images/lesson_03_css_combinators_christian_peraza.png">CSS combinators practice</a> 
-                    | <a target="_blank" href="https://codepen.io/IamFisherman/pen/zYyWaPg">CSS Pseudo-elements example</a>
-                    | <a target="_blank" href="https://codepen.io/IamFisherman/pen/VwqXdgb">Responsive menu practice</a></li>
+                    | <a target="_blank" href="lesson02/design.html">Media queries</a></li>
+                <li>03 - <a target="_blank" href="lesson03/images/lesson_03_css_combinators_christian_peraza.png">Combinators</a> 
+                    | <a target="_blank" href="https://codepen.io/IamFisherman/pen/zYyWaPg">Pseudo-elements</a>
+                    | <a target="_blank" href="https://codepen.io/IamFisherman/pen/VwqXdgb">Responsive menu</a></li>
                 <li>04 - <a href="#"></a></li>
                 <li>05 - <a href="#"></a></li>
                 <li>06 - <a href="#"></a></li>
@@ -97,5 +112,6 @@
     </footer>
 
     <script src="scripts/getdates.js" ></script>
+    <script src="scripts/responsiveMenu.js" ></script>
 </body>
 </html>

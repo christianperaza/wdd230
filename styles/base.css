@@ -10,7 +10,7 @@ body {
 
 header {
     background-color: rgb(7, 53, 113);
-
+    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -31,31 +31,59 @@ header h1 {
     margin: 0;
 }
 
+button {
+    background-color: rgb(21, 21, 21);
+    border: none;
+    display: none;
+}
+
+.area_hamburger {
+    background-color: rgb(21, 21, 21);
+    width: 100%;
+    display: none;
+}
+
+.hamburger, .x {
+    width: 2em;
+    height: 2em;
+    color: white;
+    display: none;
+    align-self: flex-start;
+    margin: 1em;
+}
+
 /** ------------ NAV ------------ **/
 
-nav {
+.nav {
     background-color: rgb(21, 21, 21);
+    padding: 5px;
+}
 
+.nav ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 5px;
-    
-    
 }
 
-nav a {
+.nav ul li {
+    list-style: none;
+}
+
+.nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: lighter;
-
     padding: 15px;
 }
 
-nav a:hover {
+.nav ul li a:hover {
     color: rgb(244, 244, 60);
     font-weight: 600;
+}
+
+.home::before{
+    content: "📍";
 }
 
 /** ------------ MAIN ------------ **/
