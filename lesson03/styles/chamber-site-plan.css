@@ -259,7 +259,7 @@ body {
 
 .portalLink {
     color: white;
-    text-decoration-line: none;
+    text-decoration-line:underline;
 }
 
 .portalLink:hover {
