@@ -24,17 +24,16 @@
 
 <body>
     
+    <!-- HEADER -->
     <header class="header">
         <div class="logoDiv">
-            <img class="logoNav" src="images/bella_vista_logo_complete.png" alt="Bella Vista Logo" width="150px">
+            <a id="logoLink" href="index.html"><img class="logoNav" src="images/bella_vista_logo_complete.png" alt="Bella Vista Logo" width="150px"></a>
         </div>
 
-        <div class="socialDiv">
+        <div class="socialHamburgerDiv">
             <img class="facebook" src="images/facebook_logo.png" alt="Facebook Logo" width="25px">
             <img class="instagram" src="images/instagram_logo.png" alt="Instagram Logo" width="25px">
-        </div>
 
-        <div class="hamburgerDiv">
             <button class="hamburgerButton">
                 <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
@@ -46,14 +45,165 @@
         </div>
     </header>
 
+    <!-- NAV -->
     <nav class="nav">
         <ul class="navList">
-            <li class="navItem">Home</li>
-            <li class="navItem">Discover</li>
-            <li class="navItem">Directory</li>
-            <li class="navItem">Join</li>
+            <li class="navItem"><a class="navLink" href="index.html">Home</a></li>
+            <li class="navItem"><a class="navLink" href="#">Discover</a></li>
+            <li class="navItem"><a class="navLink" href="#">Directory</a></li>
+            <li class="navItem"><a class="navLink" href="#">Join</a></li>
         </ul>
     </nav>
+
+    <!-- BANNER -->
+    <section id="banner">
+        <div id="banner1">
+            <h3 id="banner-subtitle">Find new ways to help and</h3>
+            <h2 id="banner-title">Grow with us</h2>
+        </div>
+        <div id="banner2">
+            <h2 id="join-now"><a id="join-link" href="#">Join now</a></h2>
+        </div>
+    </section>
+
+    <!-- SPOTLIGHTS -->
+    <section id="spot">
+        <div id="spot-div-title">
+            <h3 id="spot-title">Spotlights</h3>
+        </div>
+
+        <div class="spot-divs">
+            <div class="spot-image">Image 1</div>
+            
+            <div class="spot-text-div">
+                <div class="spot-text">
+                    <h4 class="spot-header">Header 1</h4>
+                    <p class="spot-paragraph">Lorem ipsum dolor, sit amet consectetur.</p>
+                </div>
+                <div class="spot-text2">
+                    <a class="spot-link1" href="#">+58-111-1111-111</a>
+                    <a class="spot-link2" href="#">Website</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="spot-divs">
+            <div class="spot-image">Image 2</div>
+            
+            <div class="spot-text-div">
+                <div class="spot-text">
+                    <h4 class="spot-header">Header 2</h4>
+                    <p class="spot-paragraph">Lorem ipsum dolor, sit amet consectetur.</p>
+                </div>
+                <div class="spot-text2">
+                    <a class="spot-link1" href="#">+58-222-2222-2222</a>
+                    <a class="spot-link2" href="#">Website</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="spot-divs">
+            <div class="spot-image">Image 3</div>
+            
+            <div class="spot-text-div">
+                <div class="spot-text">
+                    <h4 class="spot-header">Header 3</h4>
+                    <p class="spot-paragraph">Lorem ipsum dolor, sit amet consectetur.</p>
+                </div>
+                <div class="spot-text2">
+                    <a class="spot-link1" href="#">+58-333-3333-3333</a>
+                    <a class="spot-link2" href="#">Website</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENT -->
+    <section id="event">
+        <div id="event-image">Event Image</div>
+
+        <div id="event-text">
+            <div id="event-headers">
+                <h4 id="event-subtitle">Event Subtitle</h4>
+                <h3 id="event-title">Event Title</h3>
+            </div>
+            
+            <p id="event-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum nisi eaque eum harum quod aperiam.</p>
+
+            <div id="event-link-div"><a id="event-link" href="#">More information</a></div>
+        </div>
+    </section>
+
+    <!-- WEATHER -->
+    <section id="weather">
+        <div id="weather-content">
+            <div id="wea-div-title">
+                <h3 id="wea-title">Weather</h3>
+            </div>
+    
+            <div id="wea-div1">
+                <div id="wea-sun">Sun</div>
+                <div id="wea-main-titles">
+                    <p id="wea-title1">33°C</p>
+                    <p id="wea-title2">Partly Cloudy</p>
+                </div>
+            </div>
+
+            <hr id="wea-hr">
+    
+            <div id="wea-div2">
+                <p id="wea-humidity">Humidity</p>
+                <p id="wea-humidity2">35%</p>
+            </div>
+    
+            <div id="wea-div2">
+                <p id="wea-humidity">Wind Chill</p>
+                <p id="wea-humidity2">N/A</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div id="footer-div">
+            <ul id="footer-list">
+                <li class="footer-item"><a href="index.html" class="footer-link">Home</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Discover</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Directory</a></li>
+                <li class="footer-item"><a href="#" class="footer-link">Join</a></li>
+            </ul>
+
+            <hr id="footer-hr">
+
+            <div id="footer-logo">
+                <img id="footer-logo-img" src="images/bella_vista_logo_complete_dark.png" alt="Bella Vista Footer Logo" width="150px">
+            </div>
+
+            <div id="footer-info">
+                <ul id="footer-list-info">
+                    <li class="footer-info-item"><a href="#" class="footer-info-link">23-08 Uripata st., Bella Vista, Ciudad Guayana 8051, Bolívar, Venezuela</a></li>
+                    <li class="footer-info-item"><a href="#" class="footer-info-link">info@bellavista.org</a></li>
+                    <li class="footer-info-item"><a href="#" class="footer-info-link">+58-444-4444-4444</a></li>
+                    <li class="footer-info-item"><a href="#" class="footer-info-link">Location Map</a></li>
+                </ul>
+            </div>
+
+            <div id="footer-social">
+                <img class="social" src="images/facebook_logo.png" alt="Facebook Logo" width="25px">
+                <img class="social" src="images/instagram_logo.png" alt="Instagram Logo" width="25px">
+            </div>
+
+            <div id="footer-author">
+                <p id="footer-author-info"><span>&#169; <span id="currentYear"></span></span> <span>Christian P. Peraza M.</span> <span>WDD 230 Project</span></p>
+                <p id="footer-author-info2">Last modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="scripts/navResponsive.js"></script>
+    <script src="scripts/getDates.js" ></script>
 
 </body>
 
