@@ -124,7 +124,7 @@
         height: 18em;
     }
 
-    #wea-title1, #wea-title2, #wea-humidity, #wea-humidity2 {
+    #wea-title1, #wea-title2, .wea-humidity, .wea-humidity2 {
         font-size: 0.9em;
     }
 

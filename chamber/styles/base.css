@@ -377,12 +377,12 @@ body {
     font-weight: 600;
 }
 
-#wea-title1, #wea-title2, #wea-humidity, #wea-humidity2 {
+#wea-title1, #wea-title2, .wea-humidity, .wea-humidity2 {
     margin: 0;
     font-size: small;
 }
 
-#wea-div1, #wea-div2 {
+#wea-div1, .wea-div2 {
     display: flex;
     align-items: center;
     margin-top: 1em;
@@ -394,7 +394,7 @@ body {
     margin-bottom: 1em;
 }
 
-#wea-div2 {
+.wea-div2 {
     justify-content: space-between;
     width: 50%;
 }
@@ -406,7 +406,7 @@ body {
     font-size: small;
 }
 
-#wea-humidity {
+.wea-humidity {
     justify-content: left;
 }
 
