@@ -91,5 +91,9 @@
         margin: 0;
         width: 100%;
     }
+
+    .footer-link:hover, .footer-info-link:hover {
+        text-decoration-line: underline;
+    }
 }
 
