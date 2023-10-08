@@ -1,0 +1,115 @@
+:root {
+    --color1: #004AAD;
+    --color2: #FB8500;
+    --color3: #404040;
+    --color4: #00A6FB;
+
+    --color-temporal: #a8d3fc;
+}
+
+@media screen and (min-width: 600px) {
+
+    .logoDiv {
+        width: 40%;
+    }
+    
+
+    #nav-large {
+        display: block;
+        width: 40%;
+    }
+
+    #navList-large {
+        list-style: none;
+        padding: 0;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navLink-large {
+        color: var(--color1);
+        text-decoration-line: none;
+        font-size: small;
+    }
+
+    .navLink-large:hover {
+        color: var(--color2);
+        text-decoration-line:underline;
+        font-weight: 600;
+    }
+
+    #join-now {
+        width: 25%;
+    }
+
+    #social-hamburger {
+        width: 15%;
+    }
+
+    #social-header-div {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .hamburgerDiv {
+        display: none;
+    }
+
+    #banner {
+        height: 10em;
+        justify-content: space-around;
+    }
+
+     
+    #banner-subtitle {
+         font-size: small;
+    }
+     
+    #banner-title {
+         font-size: x-large;
+         margin-top: 0.2em;
+    }
+    
+
+    .spot-image {
+        margin-right: 2em;
+    }
+
+    #footer-list {
+        width: 60%;
+    }
+
+    #footer-social {
+        width: 25%;
+    }
+
+    #footer-author {
+        width: 60%;
+    }
+
+    #banner1, #banner2 {
+        width: 80%;
+    }
+
+    #spot {
+        width: 80%;
+    }
+
+    #event-headers, #event-paragraph, #event-link-div {
+        width: 80%;
+    }
+
+    #weather {
+        width: 80%;
+    }
+
+    #map-div-title, #map-frame {
+        width: 80%;
+    }
+}

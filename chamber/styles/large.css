@@ -1,0 +1,95 @@
+:root {
+    --color1: #004AAD;
+    --color2: #FB8500;
+    --color3: #404040;
+    --color4: #00A6FB;
+
+    --color-temporal: #a8d3fc;
+}
+
+@media screen and (min-width: 750px) {
+
+    .header {
+        justify-content: space-around;
+    }
+
+    #nav-large {
+        width: 35%;
+    }
+
+    .logoNav {
+        width: 170px;
+    }
+
+    .navLink-large {
+        font-size: 0.9em;
+    
+    }
+
+    #social-hamburger {
+        width: 10%;
+    }
+
+    #spot-div-title {
+        width: 100%;
+    }
+
+    #spot-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .spot-divs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 30%;
+    }
+
+    .spot-image {
+        width: 80%;
+        margin: 0;
+        height: 5em;
+        padding: 1.5em;
+    }
+
+    .spot-text-div {
+        width: 90%;
+        padding: 0;
+        margin-top: 0.8em;
+        height: 7em;
+    }
+
+    #event {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #weather {
+        width: 55%;
+        margin: 0;
+    }
+
+    #weather-map {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .map {
+        margin: 0;
+        width: 40%;
+    }
+    
+    #map-frame {
+        margin: 0;
+        width: 100%;
+    }
+}
+

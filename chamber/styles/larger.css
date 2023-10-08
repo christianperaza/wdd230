@@ -1,0 +1,174 @@
+:root {
+    --color1: #004AAD;
+    --color2: #FB8500;
+    --color3: #404040;
+    --color4: #00A6FB;
+
+    --color-temporal: #a8d3fc;
+}
+
+@media screen and (min-width: 1000px) {
+
+    #nav-large {
+        width: 30%;
+    }
+
+    .social-header.wa, .social-header.tx {
+        display: block;
+    }
+
+    #social-hamburger {
+        width: 15%;
+    }
+
+    #banner1, #banner2 {
+        width: 84%;
+    }
+
+    #banner {
+        height: 18em;
+        justify-content: space-around;
+    }
+
+    #banner-subtitle {
+        font-size: medium;
+    }
+    
+    #banner-title {
+        font-size: xx-large;
+        margin-top: 0.2em;
+    }
+
+    #join-now {
+        font-size: large;
+        width: 15%;
+    }
+
+    #spot {
+        width: 65%;
+    }
+
+    .spot-image {
+        width: 70%;
+        margin: 0;
+        height: 8em;
+        padding: 3em;
+    }
+
+    .spot-header {
+        font-size: medium;
+    }
+    
+    .spot-paragraph {
+        font-size: medium;
+        font-weight: 450;
+        margin-top: 0.6em;
+    }
+    
+    .spot-link1 {
+        font-size: medium;
+    }
+    
+    .spot-link2 {
+        font-size: small;
+        width: 50%;
+    }
+
+    .spot-text-div {
+        height: 8.5em;
+    }
+
+    #event {
+        height: 20em;
+    }
+
+    #event-text {
+        justify-content: center;
+    }
+
+    #event-subtitle {
+        font-size: medium;
+    }
+    
+    #event-title {
+        font-size: large;
+    }
+    
+    #event-paragraph {
+        font-size: medium;
+    }
+    
+    #event-link {
+        font-size: medium;
+    }
+
+    #event-image {
+        width: 80%;
+    }
+
+    #weather-map {
+        width: 65%;
+        margin-bottom: 6em;
+    }
+
+    #weather {
+        width: 40%;
+        height: 18em;
+    }
+
+    .map {
+        width: 55%;
+    }
+
+    #map-frame {
+        height: 18em;
+    }
+
+    #wea-title1, #wea-title2, #wea-humidity, #wea-humidity2 {
+        font-size: medium;
+    }
+
+    #wea-sun {
+        font-size: medium;
+    }
+
+    #footer-div {
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+    
+
+    #footer-logo-info {
+        margin-bottom: 2em;
+    }
+
+    #footer-info {
+        margin: 0;
+        width: 100%;
+    }
+
+    #footer-list-info {
+        align-items: center;
+        
+    }
+
+    #footer-social {
+        width: 15%;
+        margin-bottom: 4em;
+    }
+
+    #footer-author-info {
+        width: 50%;
+    }
+
+    #footer-hr {
+        width: 80%;
+        margin-top: 1.5em;
+    }
+
+    #footer-list {
+        width: 40%;
+    }
+
+
+}
