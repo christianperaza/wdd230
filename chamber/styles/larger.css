@@ -56,17 +56,17 @@
     }
 
     .spot-header {
-        font-size: medium;
+        font-size: 0.9em;
     }
     
     .spot-paragraph {
-        font-size: medium;
+        font-size: 0.9em;
         font-weight: 450;
         margin-top: 0.6em;
     }
     
     .spot-link1 {
-        font-size: medium;
+        font-size: 0.9em;
     }
     
     .spot-link2 {
@@ -75,7 +75,7 @@
     }
 
     .spot-text-div {
-        height: 8.5em;
+        height: 7.5em;
     }
 
     #event {
@@ -87,7 +87,7 @@
     }
 
     #event-subtitle {
-        font-size: medium;
+        font-size: 0.9em;
     }
     
     #event-title {
@@ -95,11 +95,11 @@
     }
     
     #event-paragraph {
-        font-size: medium;
+        font-size: 0.9em;
     }
     
     #event-link {
-        font-size: medium;
+        font-size: 0.9em;
     }
 
     #event-image {
@@ -125,11 +125,11 @@
     }
 
     #wea-title1, #wea-title2, #wea-humidity, #wea-humidity2 {
-        font-size: medium;
+        font-size: 0.9em;
     }
 
     #wea-sun {
-        font-size: medium;
+        font-size: 0.9em;
     }
 
     #footer-div {
