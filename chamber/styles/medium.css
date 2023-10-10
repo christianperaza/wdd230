@@ -64,6 +64,7 @@
     #banner {
         height: 10em;
         justify-content: space-around;
+        background-image: linear-gradient(to left, #004bad00 20%, #004AAD 100%), url(../images/panoramica_aerea_de_ciudad_guayana.jpg);
     }
 
      

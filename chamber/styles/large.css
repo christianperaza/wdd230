@@ -30,6 +30,10 @@
         width: 10%;
     }
 
+    #banner {
+        background-image: linear-gradient(to left, #004bad00 50%, #004AAD 100%), url(../images/panoramica_aerea_de_ciudad_guayana.jpg);
+    }
+
     #spot-div-title {
         width: 100%;
     }
@@ -49,7 +53,7 @@
         width: 30%;
     }
 
-    .spot-image {
+    .spot-image1, .spot-image2, .spot-image3 {
         width: 80%;
         margin: 0;
         height: 5em;
@@ -66,6 +70,10 @@
     #event {
         display: flex;
         flex-direction: row;
+    }
+
+    #event-image {
+        height: auto;
     }
 
     #weather {
