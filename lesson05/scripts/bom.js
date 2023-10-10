@@ -11,6 +11,8 @@ button.addEventListener("click", function() {
         li.append(deleteButton);
         list.append(li);
 
+        deleteButton.ariaLabel = "Delete Book";
+
         input.focus();
         input.value = "";
 
