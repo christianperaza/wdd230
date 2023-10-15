@@ -24,15 +24,6 @@ body.dark {
     background-color: white;
 }
 
-#button-dark.dark:hover {
-    background-color: var(--color1);
-    cursor: pointer;
-    
-    .sun.yes {
-        color: white;
-    }
-}
-
 #social-header-div.dark .social-header-link .social-header {
     color: white;
 }

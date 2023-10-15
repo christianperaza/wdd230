@@ -224,13 +224,10 @@ body {
     position: fixed;
     top: 85%;
     left: 80%;
-   
 }
 
 #button-dark:hover {
     cursor: pointer;
-    background-color: rgb(37, 37, 37);
-    transition: 0.3s;
 }
 
 .moon, .sun {
