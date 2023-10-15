@@ -9,8 +9,21 @@
 
 @media screen and (min-width: 1000px) {
 
+    #main {
+        margin-top: 6em;
+        margin-bottom: 6em;
+    }
+
     #nav-large {
         width: 30%;
+    }
+
+    .logoNav, .logoNav-dark {
+        width: 200px;
+    }
+
+    #footer-logo-img {
+        width: 250px;
     }
 
     .social-header.wa, .social-header.tx {
@@ -26,17 +39,18 @@
     }
 
     #banner {
-        height: 18em;
+        height: 23em;
         justify-content: space-around;
         background-image: linear-gradient(to left, #004bad00 50%, #004AAD 100%), url(../images/panoramica_aerea_de_ciudad_guayana.jpg);
+        
     }
 
     #banner-subtitle {
-        font-size: medium;
+        font-size: larger;
     }
     
     #banner-title {
-        font-size: xx-large;
+        font-size: 3em;
         margin-top: 0.2em;
     }
 
@@ -45,8 +59,13 @@
         width: 15%;
     }
 
+    #button-dark {
+        left: 92%;
+    }
+
     #spot {
         width: 65%;
+        margin-bottom: 6em;
     }
 
     .spot-image1, .spot-image2, .spot-image3 {
@@ -71,7 +90,7 @@
     }
     
     .spot-link2 {
-        font-size: small;
+        font-size: 0.9em;
         width: 50%;
     }
 
@@ -81,6 +100,7 @@
 
     #event {
         height: 20em;
+        margin-bottom: 6em;
     }
 
     #event-text {
@@ -105,11 +125,11 @@
 
     #event-image {
         width: 80%;
+        background-image: url(../images/bike.jpg);
     }
 
     #weather-map {
         width: 65%;
-        margin-bottom: 6em;
     }
 
     #weather {

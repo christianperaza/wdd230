@@ -37,7 +37,6 @@
 
     .navLink-large:hover {
         color: var(--color2);
-        text-decoration-line:underline;
         font-weight: 600;
     }
 
@@ -62,19 +61,23 @@
     }
 
     #banner {
-        height: 10em;
-        justify-content: space-around;
-        background-image: linear-gradient(to left, #004bad00 20%, #004AAD 100%), url(../images/panoramica_aerea_de_ciudad_guayana.jpg);
+        height: 11em;
+        justify-content: space-between;
+        background-image: linear-gradient(to left, #004bad00 20%, #004AAD 100%), url(../images/panoramica_aerea_de_ciudad_guayana_medium.jpg);
     }
 
      
     #banner-subtitle {
-         font-size: small;
+         font-size: medium;
     }
      
     #banner-title {
-         font-size: x-large;
+         font-size: xx-large;
          margin-top: 0.2em;
+    }
+
+    #button-dark {
+        left: 85%;
     }
     
 
