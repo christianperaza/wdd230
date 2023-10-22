@@ -25,7 +25,7 @@
     <meta property="og:image" content="https://elucabista.com/wp-content/uploads/2018/02/aliviadero_del_embalse_macagua.jpg">
 </head>
 
-<body>
+<body onload="onLoad()">
     
     <!-- HEADER -->
     <header class="header">
@@ -202,8 +202,8 @@
                 <div id="wea-div1">
                     <div id="wea-sun">Sun</div>
                     <div id="wea-main-titles">
-                        <p id="wea-title1">33°C</p>
-                        <p id="wea-title2">Partly Cloudy</p>
+                        <p id="temperature"></p>
+                        <p id="description"></p>
                     </div>
                 </div>
     
@@ -211,12 +211,12 @@
         
                 <div class="wea-div2">
                     <p class="wea-humidity">Humidity</p>
-                    <p class="wea-humidity2">35%</p>
+                    <span id="humidity"></span>
                 </div>
         
                 <div class="wea-div2">
                     <p class="wea-humidity">Wind Chill</p>
-                    <p class="wea-humidity2">N/A</p>
+                    <p id="wind-speed"></p>
                 </div>
             </div>
         </section>
@@ -286,6 +286,7 @@
     <script src="scripts/navResponsive.js"></script>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/weather.js"></script>
 
 </body>
 
