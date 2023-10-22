@@ -158,20 +158,37 @@ body {
 
 #banner {
 
-    padding: 2.5em 0 2.5em 0;
     width: 100%;
-    height: 9em;
+
     
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 
-    background-image: linear-gradient(to left, #004bad00 10%, #004AAD 100%), url(../images/panoramica_aerea_de_ciudad_guayana_base.jpg);
+    position: relative;
+
+    /* background-image: linear-gradient(to left, #004bad00 10%, #004AAD 100%), url(../images/panoramica_aerea_de_ciudad_guayana_base.webp);
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 
 }
+
+#hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #05193700, #004d7a99, var(--color1));
+}
+
+#banner #hero img {
+    width: 100%;
+    height: auto;
+}
+
 
 #banner-subtitle, #banner-title, #join-now {
    margin: 0;
@@ -181,19 +198,31 @@ body {
 
 #banner1, #banner2 {
     width: 90%;
+    position: absolute;
+}
+
+#banner1 {
+    top: 20%;
+}
+
+#banner2 {
+    top: 65%;
 }
 
 #banner-subtitle {
-    font-size: small;
+    font-size: 3vw;
+    font-weight: 400;
+    color: white;
 }
 
 #banner-title {
     font-size:x-large;
     margin-top: 0.2em;
+    font-size: 6vw;
 }
 
 #join-now {
-    font-size: medium;
+    font-size: 3vw;
     width: 33%;
     padding: 0.5em;
 
@@ -292,19 +321,19 @@ body {
 }
 
 .spot-image1 {
-    background-image: url(../images/water_car1_base.jpg);
+    background-image: url(../images/water_car1_base.webp);
     background-position: center;
     background-size: cover;
 }
 
 .spot-image2 {
-    background-image: url(../images/children_studying_base.jpg);
+    background-image: url(../images/children_studying_base.webp);
     background-position: center;
     background-size: cover;
 }
 
 .spot-image3 {
-    background-image: url(../images/workers_base.jpg);
+    background-image: url(../images/workers_base.webp);
     background-position: center;
     background-size: cover;
 }
@@ -379,7 +408,7 @@ body {
 
     font-size: small;
 
-    background-image: url(../images/bike_base.jpg);
+    background-image: url(../images/bike_base.webp);
     background-position: center;
     background-size: cover;
 }

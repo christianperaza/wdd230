@@ -23,16 +23,18 @@
 
     .navLink-large {
         font-size: 0.9em;
-    
+
     }
 
     #social-hamburger {
         width: 10%;
     }
 
-    #banner {
-        background-image: linear-gradient(to left, #004bad00 50%, #004AAD 100%), url(../images/panoramica_aerea_de_ciudad_guayana_large.jpg);
-    }
+    /* #banner {
+        background-image: linear-gradient(to left, #004bad00 50%, #004AAD 100%), url(../images/panoramica_aerea_de_ciudad_guayana_large.webp);
+    } */
+
+    
 
     #button-dark {
         left: 90%;
@@ -98,7 +100,7 @@
         margin: 0;
         width: 40%;
     }
-    
+
     #map-frame {
         margin: 0;
         width: 100%;

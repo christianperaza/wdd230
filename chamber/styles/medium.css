@@ -60,26 +60,27 @@
         display: none;
     }
 
-    #banner {
-        height: 11em;
-        justify-content: space-between;
-        background-image: linear-gradient(to left, #004bad00 20%, #004AAD 100%), url(../images/panoramica_aerea_de_ciudad_guayana_medium.jpg);
-    }
+    /* #banner {
+        background-image: linear-gradient(to left, #004bad00 20%, #004AAD 100%), url(../images/panoramica_aerea_de_ciudad_guayana_medium.webp);
+    } */
 
      
     #banner-subtitle {
-         font-size: medium;
+         font-size: 2vw;
     }
      
     #banner-title {
-         font-size: xx-large;
+         font-size: 5vw;
          margin-top: 0.2em;
     }
 
     #button-dark {
         left: 85%;
     }
-    
+
+    #join-now{
+        font-size: 2vw;
+    }    
 
     .spot-image {
         margin-right: 2em;
