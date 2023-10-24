@@ -23,11 +23,11 @@ const setWeatherData = data => {
 
     Object.keys(weatherData).forEach(key => {
         document.getElementById(key).textContent = weatherData[key];
+
         const windChill = 35.74 + (0.6215 * weatherData.temperature) - (35.75 * weatherData.windspeed + 0.16) +  (0.4275 * weatherData.temperature * weatherData.windspeed + 0.16);
         document.getElementById("wind-speed").innerHTML = windChill.toFixed(2);
-        const icon = weatherData.icon;
 
-        
+        const icon = weatherData.icon;
         img.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
         document.getElementById('wea-sun').appendChild(img);
         
