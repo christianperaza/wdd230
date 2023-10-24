@@ -511,8 +511,8 @@ body {
 
 #wea-div1 {
     justify-content: space-around;
-    width: 60%;
-    margin-bottom: 1em;
+    width: 90%;
+    margin: 0;
 }
 
 .wea-div2 {
@@ -520,12 +520,7 @@ body {
     width: 50%;
 }
 
-#wea-sun {
-    background-color: var(--color-temporal);
-    padding: 1.5em;
-    border-radius: 4em;
-    font-size: small;
-}
+
 
 .wea-humidity {
     justify-content: left;
