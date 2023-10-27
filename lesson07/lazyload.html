@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy loading</title>
+
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lazy loading</h1>
+    </header>
+
+    <main>
+        <img loading="lazy" src="//via.placeholder.com/400x600/" alt="Image 1" width="400" height="600">
+
+        <p id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, architecto optio excepturi, delectus deleniti id quae minima voluptatibus numquam molestias neque odio maxime libero sequi esse aut alias quibusdam veritatis?
+        Minima quis esse tempora. Quis maiores placeat eum! Ipsam ad placeat modi sint impedit quasi temporibus iste alias minus consectetur autem porro facilis, quisquam, in quod doloribus, accusamus optio officia.
+        Error itaque, ipsum magni voluptas architecto consequatur velit dolore! Ex, libero totam? Eius eos id, commodi voluptatum placeat illo ad delectus et distinctio dolorum. Dolorum at vitae quibusdam reprehenderit exercitationem.
+        Nostrum, dolorem libero? Repudiandae odio libero molestiae in neque. Consequatur quo, consequuntur repellendus unde illum soluta perspiciatis dolorum accusantium odit rerum, aspernatur, reiciendis sit molestiae quibusdam ea quos tempora similique?
+        Explicabo, sit molestiae. Eius nemo accusantium quia quod dolor libero maiores laudantium modi natus veniam corrupti, animi nam dolorum omnis? Exercitationem obcaecati delectus tempora rerum ipsum illo iure harum perferendis.</p>    
+
+        <img loading="lazy" src="//via.placeholder.com/400x620/" alt="Image 2" width="400" height="620">
+        <img loading="lazy" src="//via.placeholder.com/400x650/" alt="Image 3" width="400" height="650">
+        <img loading="lazy" src="//via.placeholder.com/400x680/" alt="Image 4" width="400" height="680">
+        <img loading="lazy" src="//via.placeholder.com/400x700/" alt="Image 5" width="400" height="700">
+        <img loading="lazy" src="//via.placeholder.com/400x720/" alt="Image 6" width="400" height="720">
+    </main>
+
+    <footer>
+        <p>Christian Peraza | WDD-230 Web Frontend Development I</p>
+        <p>Last last modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/lazyLoad.js"></script>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>
