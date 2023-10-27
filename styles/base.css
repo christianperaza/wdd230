@@ -161,6 +161,11 @@ main h3 {
     font-weight: 600;
 }
 
+.card {
+    background-color: rgb(224, 219, 219); 
+    border-radius: 5px;
+}
+
 .card ul {
     background-color: rgb(224, 219, 219);
     margin: 0;
@@ -178,6 +183,40 @@ main h3 {
 .map iframe {
     width: 60%;
     margin: 0 auto;
+}
+
+#div-weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#div-temp-descript {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#div-temp {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 0.3em;
+}
+
+#description {
+    margin-top: 0.3em;
+}
+
+#div-visits {
+    padding-bottom: 2em;
+}
+
+#information {
+    padding-top: 20px;
 }
 
 /** ------------ FOOTER ------------ **/

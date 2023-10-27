@@ -26,7 +26,7 @@
 </head>
 
 <!-- the body tag -->
-<body>
+<body onload="onLoad()">
 <!-- In the <body>, create a layout using header, nav, main, and footer elements in that order -->
     <header>
         <!-- The <header> element contains your optimized profile image img and your name in an h1 tag -->
@@ -109,10 +109,23 @@
             <h3>INFORMATION</h3>
             <!-- Information placeholders about the weather, number of visits to the page, etc. -->
             <!-- CHRISTIAN'S NOTE: I decided to put span elements -->
-            <div id="placeholders">
-                <span id="country"></span>
-                <span id="weather"></span>
-                <span id="visits"></span>
+            <div id="information">
+                <p id="country"></p>
+
+                <div id="div-weather">
+                    <div id="wea-sun"></div>
+                    <div id="div-temp-descript">
+                        <div id="div-temp">
+                            <span id="temperature"></span></span>°F</span>
+                        </div>
+                        <span id="description"></span>
+                    </div>
+                </div>
+                
+                <div id="div-visits">
+                    <span>Number of visits: </span><span id="visits"></span>
+                </div>
+                
             </div>
         </section>
     </main>
@@ -131,5 +144,7 @@
 
     <script src="scripts/getdates.js" ></script>
     <script src="scripts/responsiveMenu.js" ></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/getVisits.js"></script>
 </body>
 </html>
