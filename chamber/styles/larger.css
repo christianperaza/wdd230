@@ -189,5 +189,78 @@
         width: 40%;
     }
 
+/* --------------- DISCOVER --------------- */
+
+    .main {
+        width: 65%;
+        font-size: 1vw; 
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 1em;
+    }
+
+ 
+
+    .map.discover {
+        display: block;
+        width: 100%;
+    }
+
+    .side-bar.two {
+        margin-bottom: 1em;
+    }
+
+    .discover-img-container {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr;
+        grid-template-areas: "image";
+        background: linear-gradient(to left, #004bad00, var(--color1), var(--color4));
+        border-radius: 1em;
+        
+    }
+
+    .discover-img {
+        margin: 0;
+        position: relative;
+        
+    }
+
+
+    .discover-img-content {
+        position: absolute;
+        z-index: -1;
+        padding: 50px;
+        color: white;
+
+        font-size: 1.1vw;
+     
+    }
+
+    .discover-img-container:hover > .discover-img {
+
+        opacity: .5;
+        transition: .3s;
+
+        
+    }
+
+    .discover-img-container:hover > .discover-img-content {
+
+        z-index: 1;
+
+        
+    }
+
+   
+
+    .images {
+        margin-top: 0;
+    }
+
+    
 
 }

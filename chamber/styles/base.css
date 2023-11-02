@@ -16,7 +16,7 @@ body {
 }
 
 #main {
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
 
 /* --------- HEADER --------- */
@@ -670,3 +670,174 @@ body {
     justify-content: space-between;
     margin-bottom: 0.5em;
 }
+
+
+
+/* --------- DISCOVER --------- */
+.main {
+    width: 90%;
+    margin: 0 auto;
+
+    margin-top: 1.5em;
+
+    font-size: 3.5vw;
+}
+
+.map.discover {
+    display: none;
+}
+
+.side-bar {
+    
+    border-radius: 1em;
+}
+
+.side-bar-p1 {
+    margin-top: 0;
+}
+
+.side-bar.one {
+    margin-bottom: 1em;
+    background-color: #ebebeb;
+    padding: 2em;
+
+}
+
+.side-bar-icon {
+    color: var(--color2);
+}
+
+.side-bar.two {
+
+
+    font-weight: 500;
+    background-color: #19519a;
+    color: white;
+    text-align: center;
+    padding: .1em;
+    border-radius: 3em;
+    margin-bottom: 1em;
+
+}
+
+
+
+.side-bar1-title1 {
+    font-weight:normal;
+    margin-bottom: 0.3em;
+}
+
+.side-bar1-title2 {
+    margin: 0;
+}
+
+.side-bar-info-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1em;
+
+    margin-top: 2em;
+}
+
+.side-bar-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "icon text";
+    grid-gap: 1em;
+    align-items: center;
+}
+
+.side-bar-info span {
+    grid-area: icon;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.side-bar-info p {
+    grid-area: text;
+
+    font-weight: bold;
+}
+
+
+
+
+.images {
+    display: grid;
+    grid-gap: 1em;
+    margin-top: 1em;
+}
+
+.discover-img-container {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image content";
+    align-items: center;
+
+    
+}
+
+.discover-img {
+    border-radius: 1em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+    .main {
+        font-size: 2.5vw;
+    }
+}
+
+/* .main {
+    margin-top: 6em;
+    margin-bottom: 6em;
+
+    width: 65%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "sidebar images";
+}
+
+.images {
+    background-color: #004AAD;
+    padding: 1em;
+
+    grid-area: images;
+
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.side-bar {
+    background-color: #004AAD;
+
+    grid-area: sidebar;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+
+
+
+
+
+.map.discover {
+    width: 100%;
+} */

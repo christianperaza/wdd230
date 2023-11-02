@@ -109,5 +109,18 @@
     .footer-link:hover, .footer-info-link:hover {
         text-decoration-line: underline;
     }
+
+
+
+    .main {
+        width: 70%;
+        font-size: 1.8vw;
+    }
+
+    @media screen and (min-width: 900px) {
+        .main {
+            font-size: 1.5vw;
+        }
+    }
 }
 
