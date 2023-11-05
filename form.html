@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form | Home Portal</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="shortcut icon" href="images/christian_peraza_favicon.webp" type="image/x-icon">
+
+    <style>
+        input[type="radio"] {
+	        display: none;
+	        position: relative;
+	        caret-color: rgba(0, 0, 0, 0);
+        }
+
+        .stars {
+	        display: flex;
+	        flex-direction: row-reverse;
+	        justify-content: left;
+        }
+
+        .stars > label {
+	        color: gold;
+	        width: 30px;
+	        height: 30px;
+	        font-size: 2rem;
+	        margin-left: 5px;
+	        display: flex;
+	        align-items: center;
+	        caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+        }
+
+        .stars > label:hover {
+	        color: #000;
+}
+
+        .stars > label::before {
+	        content: "\2606";
+        }
+
+        .stars input:checked ~ label::before {
+	        content: "\2605";
+        }
+    </style>
+</head>
+
+<body class="body-form">
+    <header>
+        <img src="images/christian_peraza.webp" alt="Christian Peraza's profile image" width="130" height="130">
+        
+        <h1>Christian P. Peraza M.</h1>
+
+        <div class="area_hamburger">
+            <button  class="button">
+                <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                <svg class="x" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                    </svg>
+            </button>
+        </div>
+        
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a class="home" href="index.html">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a target="_blank" href="https://degreeportal.byupathway.org/?providerId=8389">BYU-Idaho</a></li>
+            <li><a target="_blank" href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/7?lang=spa&id=p10-p13#p10">Scripture</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-form">
+        <h2 class="title-form">Create an account</h2>
+        <span id="formmessage"></span>
+        <form method="get" action="record.html">
+
+            <label><input type="text" id="user-name" name="username" required placeholder="Username"></label>
+
+            <label><input type="password" id="pwd" name="pwd" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="must be at least eight (8) characters long and can
+                only be alpha-numeric" placeholder="Password"></label>
+
+            <label><input type="password" id="pwd2" name="pwd2" required placeholder="Confirm Password"></label>
+
+            <label><input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" placeholder="Email Address"></label>
+
+            <label class="rating">Rating: </label>
+            <div class="stars">
+	            <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+	            <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+	            <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+	            <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+	            <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+            </div>
+
+            <input type="submit" value="Create Account">
+
+        </form>
+    </main>
+
+    <footer>
+            <p> &#169; <span id="currentYear"></span> | Christian P. Peraza M. | Venezuela</p>
+            <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/getdates.js" ></script>
+    <script src="scripts/responsiveMenu.js" ></script>
+    <script src="scripts/confirmPassword.js"></script>
+</body>
+
+</html>
