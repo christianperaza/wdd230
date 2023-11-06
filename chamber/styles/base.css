@@ -915,6 +915,8 @@ fieldset label input::placeholder {
     height: 10em;
     padding: .5em .5em 1em .5em;
     font-size: 4vw;
+    margin-top: .5em;
+    margin-bottom: 1em;
 }
 
 .businessDescription textarea:hover {
@@ -970,5 +972,9 @@ table {
 
 .currentDate input, .currentTime input {
     color: rgb(73, 73, 73);
+}
+
+.currentDate input {
+    margin-bottom: 1em;
 }
 
