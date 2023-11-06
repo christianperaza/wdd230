@@ -261,6 +261,159 @@
         margin-top: 0;
     }
 
+/* --------------- JOIN --------------- */
+.header.joinh {
+    box-shadow: 0 1px 10px rgb(208, 208, 208);
+}
+
+.join {
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+
+#banner.joinb{
+    display: none;
+}
+
+    .join form {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .join form fieldset {
+        font-size: 1.1vw;
+    }
+
+    .mlevel, .businessDescription, .membershipLevelDiv, fieldset label input, .businessDescription textarea, .submitBtn {
+        font-size: 1vw;
+    }
+
+    .join h1 {
+        font-size: 2vw;
+        margin-bottom: 2em;
+    }
+
+    .join p {
+        font-size: 1vw;
+    }
+
+    .currentDate, .currentTime {
+        font-size: 1vw;
+    }
+
+
+    .form1 {
+        width: 35%;
+    }
+
+    .form2 {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        margin-top: .5em;
+    }
+
+    .form2Img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .form2Img img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2em;
+        border-radius: 1em;
+    }
+
+    .submitBtn:hover {
+        cursor: pointer;
+    }
+
+   /* TABLE */
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 1vw;
+    
+    display:block;
+    width: 100%;
+}
+
+td {
+    border: 1px solid rgb(151, 151, 151);
+    width: 100%;
+}
+
+th {
+    border: 1px solid white;
+    
+}
+
+.head1 {
+    background-color: var(--color1);
+    color: white;
+    padding: 1em 5em 1em 5em;
+    font-weight: 600;
+}
+
+.head2 {
+    padding: .5em 1em .5em 1em;
+
+    background-color: rgb(48, 122, 226);
+    color: white;
+    font-weight: 600;
+}
+
+.feature {
+    padding: .5em 1em .5em 1em;
+    font-weight: 600;
+    color: rgb(54, 54, 54);
+
+    border-left-width: 0;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+	background-color: rgb(228, 228, 228);
+}
+
+tbody tr td:last-child {
+    border-right-width: 0;
+}
+
+caption {
+    caption-side: bottom;
+    font-size: small;
+    padding: 1em;
+    color: rgb(74, 74, 74);
+}
+
+.head2.empty {
+    background-color: var(--color3);
+} 
+
+.head2.bro {
+    background-color: rgb(233, 123, 49);
+}
+
+.head2.sil {
+    background-color: rgb(161, 161, 161);
+}
+
+.head2.gol {
+    background-color: rgb(240, 163, 20);
+}
+
+
+
+    
+
     
 
 }

@@ -126,5 +126,26 @@
         font-size: 2vw;
     }
 
+    .join form {
+        width: 70%;
+    }
+
+    .join form fieldset, fieldset label input, .businessDescription textarea, .submitBtn {
+        font-size: 2.5vw;
+    }
+
+    .join h1 {
+        font-size: 3.5vw;
+    }
+
+    .join p {
+        font-size: 2vw;
+    }
+
+    .currentDate, .currentTime {
+        font-size: 2.5vw;
+    }
+   
+
     
 }

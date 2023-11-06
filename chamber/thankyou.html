@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover | Bella Vista Chamber of Commerce</title>
+    <title>Join us | Bella Vista Chamber of Commerce</title>
 
     <link rel="shortcut icon" href="images/bella_vista_chamber_commerce_favicon.png" type="image/x-icon">
 
@@ -28,7 +28,7 @@
 <body onload="onLoad()">
     
     <!-- HEADER -->
-    <header class="header">
+    <header class="header joinh">
         <div id="header-div">
             <div class="logoDiv">
                 <a class="logoLink" href="index.html"><img class="logoNav" src="images/bella_vista_logo_complete.webp" alt="Bella Vista Logo" width="150"></a>
@@ -89,133 +89,42 @@
         </ul>
     </nav>
 
-    <!-- BANNER -->
-    <section id="banner">
+    <!-- BANNER  -->
+    <section id="banner" class="joinb">
         <picture id="hero">
-            <source srcset="images/wdd230-org-small.webp" media="(max-width: 600px)" >
-            <source srcset="images/wdd230-org-medium.webp" media="(max-width: 1000px)">
-            <img src="images/wdd230-org-large.webp" alt="Hero Image" width="2000" height="747">
+            <source srcset="images/join-image-small.webp" media="(max-width: 600px)" >
+            <source srcset="images/join-image-medium.webp" media="(max-width: 1000px)">
+            <img src="images/join-image-large.webp" alt="Hero Image" width="2000" height="747">
         </picture>
         <div id="banner1">
-            <h3 id="banner-subtitle">Find new ways to help and</h3>
-            <h2 id="banner-title">Grow with us</h2>
+            <h3 id="banner-subtitle">Joining us is</h3>
+            <h2 id="banner-title">Winning together</h2>
         </div>
         <div id="banner2">
-            <a id="join-link" href="join.html"><h2 id="join-now">Join now</h2></a>
+            <a id="join-link" href="discover.html"><h2 id="join-now">Discover</h2></a>
         </div>
     </section>
 
     <!-- MAIN -->
-    <main id="main" class="main">
+    <main class="join">
 
         <!-- DARK MODE -->
         <button id="button-dark">
             <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
             <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-          </svg>
+            </svg>
 
-          <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
             <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-          </svg>
+            </svg>
+          
         </button>
-
-
-
-
-        <div class="wrapper">
-            <aside class="side-bar-container">
-                <div class="side-bar two">
-                    <p class="message-visits"></p>
-                </div>
-                
-                <div class="side-bar one">
-                    <h5 class="side-bar-p1">We are here</h5>
-
-                    <h3 class="side-bar1-title1">Bella Vista,</h3>
-                    <h3 class="side-bar1-title2">Ciudad Guayana</h3>
-
-                    <p>Ciudad Guayana is a city in the Bolívar state, in Venezuela. <strong>In 2020 it had a population of 838,705 inhabitants</strong>; the largest city in eastern and southeastern Venezuela, as well as the main industrial, economic and financial center of the region.</p>
-
-                    <div class="side-bar-info-container">
-                        <div class="side-bar-info">
-                            <span><svg class="side-bar-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"  viewBox="0 0 16 16">
-                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM8.21 3.855c-1.868 0-3.116 1.395-3.116 4.407 0 1.183.228 2.039.597 2.642.569.926 1.477 1.254 2.409 1.254 1.629 0 2.847-1.013 2.847-2.783 0-1.676-1.254-2.555-2.508-2.555-1.125 0-1.752.61-1.98 1.155h-.082c-.012-1.946.727-3.036 1.805-3.036.802 0 1.213.457 1.312.815h1.29c-.06-.908-.962-1.899-2.573-1.899Zm-.099 4.008c-.92 0-1.564.65-1.564 1.576 0 1.032.703 1.635 1.558 1.635.868 0 1.553-.533 1.553-1.629 0-1.06-.744-1.582-1.547-1.582Z"/>
-                              </svg></span>
-                            <p>Is the sixth most populated city in Venezuela</p>
-                        </div>
-                        <div class="side-bar-info">
-                            <span><svg class="side-bar-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777l-3-4.5z"/>
-                              </svg></span>
-                            <p>Three types of landscapes are present: Plain, Peniplanicie and Lomerío</p>
-                        </div>
-                        <div class="side-bar-info">
-                            <span><svg class="side-bar-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001"/>
-                              </svg></span>
-                            <p>First foundation: October 9, 1554. Last foundation: July 2, 1961</p>
-                        </div>
-                    </div>
-                </div>
-
-                
-
-                <div class="map discover">
-                    <iframe id="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7894.702509579983!2d-62.64159408717367!3d8.367065416541699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dcbefd7b3eba1d9%3A0x95fbb21b1fea394d!2sBella%20Vista%2C%20Ciudad%20Guayana%208051%2C%20Bol%C3%ADvar!5e0!3m2!1ses-419!2sve!4v1695941693487!5m2!1ses-419!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="myFrame"></iframe>
-                </div>
-            </aside>
-
-            <section class="images">
-                <div class="discover-img-container 1">
-                    
-                        <img class="discover-img" src="images/image_1.webp" alt="Image 1" width="800" loading="lazy">
-                    
-                    
-                    <div class="discover-img-content 1">
-                        <h4>Header 1</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur</p>
-                    </div>
-                </div>
-                <div class="discover-img-container 2">
-                    <img class="discover-img" src="images/image_2.webp" alt="Image 2" width="800" loading="lazy">
-                    <div class="discover-img-content">
-                        <h4>Header 2</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur</p>
-                    </div>
-                </div>
-                <div class="discover-img-container 3">
-                    <img class="discover-img" src="images/image_3.webp" alt="Image 3" width="800" loading="lazy">
-                    <div class="discover-img-content">
-                        <h4>Header 3</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur</p>
-                    </div>
-                </div>
-                <div class="discover-img-container 4">
-                    <img class="discover-img" src="images/image_4.webp" alt="Image 4" width="800" loading="lazy">
-                    <div class="discover-img-content">
-                        <h4>Header 4</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur</p>
-                    </div>
-                </div>
-                <div class="discover-img-container 5">
-                    <img class="discover-img" src="images/image_5.webp" alt="Image 5" width="800" loading="lazy">
-                    <div class="discover-img-content">
-                        <h4>Header 5</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur</p>
-                    </div>
-                </div>
-                <div class="discover-img-container 6">
-                    <img class="discover-img" src="images/image_6.webp" alt="Image 6" width="800" loading="lazy">
-                    <div class="discover-img-content">
-                        <h4>Header 6</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur</p>
-                    </div>
-                </div>
-            </section>
-        </div>
     
         
-    
+        <!-- JOIN FORM -->
+        <h1>✅ Thanks for want to join us!</h1>
+
+        <p>Thanks for take time to fill the form and want to join us. We will get back to you within a week with a response.</p>
 
     </main>
 
@@ -224,7 +133,7 @@
         <div id="footer-div">
             <ul id="footer-list">
                 <li class="footer-item"><a href="index.html" class="footer-link">Home</a></li>
-                <li class="footer-item"><a href="#" class="footer-link">Discover</a></li>
+                <li class="footer-item"><a href="discover.html" class="footer-link">Discover</a></li>
                 <li class="footer-item"><a href="#" class="footer-link">Directory</a></li>
                 <li class="footer-item"><a href="join.html" class="footer-link">Join</a></li>
             </ul>
@@ -278,8 +187,6 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/weather.js"></script>
-    <script src="scripts/getVisits.js"></script>
-
 </body>
 
 </html>

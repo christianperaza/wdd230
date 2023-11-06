@@ -122,5 +122,21 @@
             font-size: 1.5vw;
         }
     }
+
+    .join form fieldset, fieldset label input, .businessDescription textarea, .submitBtn {
+        font-size: 2vw;
+    }
+
+    .join h1 {
+        font-size: 3vw;
+    }
+
+    .join p {
+        font-size: 1.5vw;
+    }
+
+    .currentDate, .currentTime {
+        font-size: 2vw;
+    }
 }
 
