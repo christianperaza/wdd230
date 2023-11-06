@@ -13,42 +13,6 @@
 
     <link rel="shortcut icon" href="images/christian_peraza_favicon.webp" type="image/x-icon">
 
-    <style>
-        input[type="radio"] {
-	        display: none;
-	        position: relative;
-	        caret-color: rgba(0, 0, 0, 0);
-        }
-
-        .stars {
-	        display: flex;
-	        flex-direction: row-reverse;
-	        justify-content: left;
-        }
-
-        .stars > label {
-	        color: gold;
-	        width: 30px;
-	        height: 30px;
-	        font-size: 2rem;
-	        margin-left: 5px;
-	        display: flex;
-	        align-items: center;
-	        caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
-        }
-
-        .stars > label:hover {
-	        color: #000;
-}
-
-        .stars > label::before {
-	        content: "\2606";
-        }
-
-        .stars input:checked ~ label::before {
-	        content: "\2605";
-        }
-    </style>
 </head>
 
 <body class="body-form">
@@ -82,7 +46,7 @@
 
     <main class="main-form">
         <h2 class="title-form">Create an account</h2>
-        <span id="formmessage"></span>
+        <span class="formmessage"></span>
         <form method="get" action="record.html">
 
             <label><input type="text" id="user-name" name="username" required placeholder="Username"></label>
@@ -103,7 +67,7 @@
 	            <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
             </div>
 
-            <input type="submit" value="Create Account">
+            <input class="submit" type="submit" value="Create Account">
 
         </form>
     </main>

@@ -1,10 +1,35 @@
+:root {
+    --font-weight: 600;
+    --color-orange: rgb(238, 134, 15);
+    --color-gray: rgb(218, 218, 218);
+    --font-size: 700;
+}
+
 .body-form {
     width: 100%;
 }
 
+.formmessage {
+    display: none;
+}
+
+.formmessage.show {
+    display: block;
+    
+    background-color: var(--color-gray);
+    font-weight: var(--font-weight);
+    border-radius: 1em;
+    padding: 2em;
+    width: 80%;
+    align-self: center;
+}
+
+
+
 .title-form {
     padding: 0;
-    font-weight: 700;
+    font-weight: var(--font-size);
+    margin-top: 1em;
 }
 
 .main-form {
@@ -26,6 +51,7 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 1em;
 }
 
 
@@ -38,7 +64,26 @@ input {
 
     padding: 1em .2em 1em 1em;
     margin: .5em 0 .5em 0;
- 
+    background-color: rgb(233, 233, 233);
+    border-radius: .5em;
+    border: none;
+}
+
+input:hover {
+    background-color: var(--color-gray);
+}
+
+.submit {
+    border-radius: 3em;
+    border-style: none;
+    font-weight: var(--font-weight);
+    background-color: var(--color-orange);
+    color: white;
+}
+
+.submit:hover {
+    background-color: rgb(215, 120, 11);
+    cursor: pointer;
 }
 
 label {
@@ -48,4 +93,96 @@ label {
     align-items: center;
 }
 
+/* ------ RATING STARS --------*/
+
+.rating {
+    margin-top: 1.5em;
+    font-weight: var(--font-weight);
+    margin-bottom: .5em;
+}
+
+.stars {
+    margin-bottom: 1.5em;
+}
+
+input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.stars > label {
+    color: gold;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars > label:hover {
+    color: var(--color-orange);
+}
+
+.stars > label::before {
+    content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+    content: "\2605";
+}
+
+/* ------ RECORD ------- */
+main.record {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 0 auto;
+
+    margin-bottom: 4em;
+    width: 80%;
+}
+
+main.record h2{
+   margin-bottom: 0;
+}
+
+main.record p{
+    font-size: var(--font-size);
+    padding: 2em;
+    border-radius: 2em;
+    background-color: rgb(37, 154, 37);
+    color: white;
+}
+
+@media screen and (min-width: 700px)
+{
+    .main-form, .record {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 800px)
+{
+    .main-form, .record {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1000px)
+{
+    .main-form, .record {
+        width: 30%;
+    }
+}
 
