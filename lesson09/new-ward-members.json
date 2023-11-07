@@ -1,0 +1,23 @@
+{
+    "familyName" : "Martinez",
+    "movedDate" : "11/07/2023",
+    "numberOfFamilyMembers" : 3,
+    "bishopricVisit" : true,
+    "familyMembers" : [
+        {
+            "name" : "Pablo Martinez",
+            "gender" : "Male",
+            "birthday" : "01/01/1980"
+        },
+        {
+            "name" : "Del Carmen Martinez",
+            "gender" : "Female",
+            "birthday" : "12/27/1979"
+        },
+        {
+            "name" : "Paulina Martinez",
+            "gender" : "Female",
+            "birthday" : "04/04/2003"
+        }
+    ]
+}
