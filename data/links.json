@@ -1,0 +1,147 @@
+{
+    "lessons" : [
+
+        {
+            "lesson" : "01",
+            "links" : [
+                {
+                    "url" : "lesson01/holygrail.html",
+                    "title" : "Holy Layout"
+                },
+                {
+                    "url" : "lesson01/media-query.html",
+                    "title" : "Media Queries Scriptures"
+                }
+            ]
+        },
+
+        {
+            "lesson" : "02",
+            "links" : [
+                {
+                    "url" : "lesson02/design-principles.html",
+                    "title" : "Design Principles Document"
+                },
+                {
+                    "url" : "lesson02/design.html",
+                    "title" : "Media Queries Design Principles"
+                }
+            ]
+        },
+
+        {
+            "lesson" : "03",
+            "links" : [
+                {
+                    "url" : "lesson03/images/lesson_03_css_combinators_christian_peraza.png",
+                    "title" : "Combinators"
+                },
+                {
+                    "url" : "https://codepen.io/IamFisherman/pen/zYyWaPg",
+                    "title" : "Pseudo-elements"
+                },
+                {
+                    "url" : "https://codepen.io/IamFisherman/pen/VwqXdgb",
+                    "title" : "Responsive Menu"
+                },
+                {
+                    "url" : "lesson03/chamber-site-plan.html",
+                    "title" : "Chamber Site Plan"
+                }
+            ]
+        },
+
+        {
+            "lesson" : "04",
+            "links" : [
+                {
+                    "url" : "https://codepen.io/IamFisherman/pen/BavOWQO",
+                    "title" : "Pseudo-classes"
+                },
+                {
+                    "url" : "chamber/index.html",
+                    "title" : "Bella Vista Chamber"
+                }
+            ]
+        },
+
+        {
+            "lesson" : "05",
+            "links" : [
+                {
+                    "url" : "lesson05/bom.html",
+                    "title" : "Book of Mormon Top 10"
+                }
+            ]
+        },
+
+        {
+            "lesson" : "06",
+            "links" : [
+                {
+                    "url" : "lesson06/images/landscape-reduced.webp",
+                    "title" : "WebP"
+                },
+                {
+                    "url" : "lesson06/responsive-images.html",
+                    "title" : "Responsive Images"
+                }
+            ]
+        },
+
+        {
+            "lesson" : "07",
+            "links" : [
+                {
+                    "url" : "lesson07/lazy-load/lazyload.html",
+                    "title" : "Lazy Loading"
+                },
+                {
+                    "url" : "lesson07/new-bom/bom2.html",
+                    "title" : "BOM Local Storage"
+                },
+                {
+                    "url" : "chamber/discover.html",
+                    "title" : "Discover Chamber Page"
+                }
+            ]
+        },
+
+        {
+            "lesson" : "08",
+            "links" : [
+                {
+                    "url" : "lesson08/tablebuild.html",
+                    "title" : "Table Build"
+                },
+                {
+                    "url" : "lesson08/form-start/index.html",
+                    "title" : "Form Practice"
+                },
+                {
+                    "url" : "form.html",
+                    "title" : "Home Portal Form"
+                },
+                {
+                    "url" : "chamber/join.html",
+                    "title" : "Join Chamber"
+                }
+            ]
+        },
+
+        {
+            "lesson" : "09",
+            "links" : [
+                {
+                    "url" : "lesson09/new-ward-members/new-ward-members.json",
+                    "title" : "JSON Activity"
+                },
+                {
+                    "url" : "lesson09/prophets/prophets.html",
+                    "title" : "Fetch API Prophets"
+                }
+            ]
+        }
+
+    ]
+}
