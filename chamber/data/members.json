@@ -1,0 +1,84 @@
+{
+    "companies" : [
+        {
+            "name" : "Clínica Grado",
+            "address" : "C/ Alonso de Grado, 5, Grado, Asturias",
+            "phoneNumber" : "984 390 856",
+            "email" : "consulta@clinicagrado.es",
+            "websiteURL" : "https://clinicagrado.es/",
+            "imageLogo" : "../images/clinica_grado.webp",
+            "membershipLevel" : "Gold"
+        },
+
+        {
+            "name" : "Centro Arete",
+            "address" : "Calle 12 #30-340 Medellín-Antioquia, Colombia",
+            "phoneNumber" : "(57) 312 8865916",
+            "email" : "centroarete@gmail.com",
+            "websiteURL" : "https://centroarete.org/",
+            "imageLogo" : "../images/centro_arete.webp",
+            "membershipLevel" : "NP"
+        },
+
+        {
+            "name" : "Corzo Surf School",
+            "address" : "Calle 14 #55, Argentina",
+            "phoneNumber" : "(51) 987 575 876",
+            "email" : "informes.corzosurf@gmail.com",
+            "websiteURL" : "https://www.corzosurfschool.com/",
+            "imageLogo" : "../images/corzo.webp",
+            "membershipLevel" : "Silver"
+        },
+
+        {
+            "name" : "Ellegantia",
+            "address" : "Calle Gema 28",
+            "phoneNumber" : "648 08 47 76",
+            "email" : "info@ellegantia.es",
+            "websiteURL" : "https://ellegantia.es/",
+            "imageLogo" : "../images/ellegantia.webp",
+            "membershipLevel" : "Silver"
+        },
+
+        {
+            "name" : "Professionals de Joventut",
+            "address" : "Calàbria 120 baixos, 08015 Barcelona",
+            "phoneNumber" : "622 892 905",
+            "email" : "info@joventut.info",
+            "websiteURL" : "https://joventut.info/es/",
+            "imageLogo" : "../images/acpj.webp",
+            "membershipLevel" : "Bronze"
+        },
+
+        {
+            "name" : "La Cocina de Elisa",
+            "address" : "180 #12 Venezuela",
+            "phoneNumber" : "952 03 99 50",
+            "email" : "info@lacocinadeelisa.es",
+            "websiteURL" : "https://www.lacocinadeelisa.es/",
+            "imageLogo" : "../images/la_cocina_de_elisa.webp",
+            "membershipLevel" : "Silver"
+        },
+
+        {
+            "name" : "Freetours",
+            "address" : "31 #150 Valencia",
+            "phoneNumber" : "(34) 693 75 60 42",
+            "email" : "info@freetourvalencia.com",
+            "websiteURL" : "https://freetourvalencia.com/",
+            "imageLogo" : "../images/freetours.webp",
+            "membershipLevel" : "Gold"
+        },
+
+        {
+            "name" : "Grand Velas",
+            "address" : "Carretera Cancun Tulum Km 62, Riviera Maya, Mexico, 77710",
+            "phoneNumber" : "(800) 831 1165",
+            "email" : "reservationsrm@velasresorts.com",
+            "websiteURL" : "https://rivieramaya.grandvelas.com/",
+            "imageLogo" : "../images/grand_velas.webp",
+            "membershipLevel" : "Gold"
+        }
+
+    ]
+}
