@@ -139,6 +139,10 @@
                 {
                     "url" : "lesson09/prophets/prophets.html",
                     "title" : "Fetch API Prophets"
+                },
+                {
+                    "url" : "chamber/directory.html",
+                    "title" : "Chamber Directory"
                 }
             ]
         }
