@@ -1221,3 +1221,70 @@ table {
     }
 
 }
+
+
+/* -------- DARK MODE -------- */
+body.dark {
+    background-color: rgb(37, 37, 37);
+    transition: 0.5s;
+}
+
+.header.dark, .hamburgerButton.dark  {
+    background-color: var(--color3);
+}
+
+.hamburgerButton.dark svg {
+    color: white;
+}
+
+#button-dark.dark {
+    background-color: white;
+}
+
+#social-header-div.dark .social-header-link .social-header {
+    color: white;
+}
+
+#navList-large.dark .navItem-large .navLink-large {
+    color: white;
+} 
+
+#navList-large.dark .navItem-large .navLink-large:hover {
+    color: var(--color4);
+} 
+
+#main.dark #spot {
+    color: white;
+}
+
+#main.dark #spot .spot-link1 {
+    color: rgb(65, 197, 233);
+}
+
+#main.dark #spot .spot-link2 {
+    background-color: rgb(108, 108, 108);
+    color: white;
+}
+
+#main.dark #spot .spot-link2:hover {
+    background-color: var(--color1);
+    color: white;
+}
+
+#main.dark #event-text {
+    background-color: #404040;
+}
+
+#main.dark #event-text #event-paragraph {
+    color: rgb(218, 218, 218)
+}
+
+#main.dark #event-text #event-link {
+    background-color: var(--color1);
+    color: white;
+}
+
+#main.dark #event-text #event-link:hover {
+    background-color: white;
+    color: var(--color1);
+}
