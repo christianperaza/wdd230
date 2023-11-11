@@ -271,10 +271,6 @@
     margin-bottom: 5em;
 }
 
-#banner.joinb{
-    display: none;
-}
-
     .join form {
         width: 70%;
         display: flex;

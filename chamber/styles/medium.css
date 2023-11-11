@@ -35,6 +35,18 @@
         font-size: small;
     }
 
+    .navLink-large.home, .navLink-large.discover, .navLink-large.directory, .navLink-large.join {
+        background-color: var(--color2);
+        padding: .5em 1em;
+        border-radius: 2em;
+        color: white;
+        font-weight: 600;
+    }
+
+    .navLink-large.home:hover, .navLink-large.discover:hover, .navLink-large.directory:hover, .navLink-large.join:hover {
+        color: white;
+    }
+
     .navLink-large:hover {
         color: var(--color2);
         font-weight: 600;

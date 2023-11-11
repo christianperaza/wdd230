@@ -154,6 +154,11 @@ body {
     text-decoration-line: none;
 }
 
+.navLink.home, .navLink.discover, .navLink.directory,.navLink.join {
+    color: var(--color2);
+    font-weight: 600;
+}
+
 /* --------- BANNER --------- */
 
 #banner {
@@ -594,6 +599,14 @@ body {
     font-size: small;
 }
 
+.footer-link.home, .footer-link.discover, .footer-link.directory, .footer-link.join {
+    background-color: white;
+    padding: .5em 1em;
+    border-radius: 2em;
+    color: var(--color3);
+    font-weight: 600;
+}
+
 #footer-hr {
     width: 100%;
     border: solid;
@@ -942,10 +955,6 @@ fieldset label input::placeholder {
 .submitBtn:hover {
     background-color: #023475;
     cursor: pointer;
-}
-
-.form2Img {
-    display: none;
 }
 
 table {
