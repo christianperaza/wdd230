@@ -145,6 +145,16 @@
                     "title" : "Chamber Directory"
                 }
             ]
+        },
+
+        {
+            "lesson" : "10",
+            "links" : [
+                {
+                    "url" : "lesson10/weatherAPI/weather.html",
+                    "title" : "Weather API"
+                }
+            ]
         }
 
     ]
