@@ -207,8 +207,14 @@ main h3 {
     margin-bottom: 0.3em;
 }
 
+#country, #nVisits, #temperature {
+    font-weight: 500;
+}
+
 #description {
     margin-top: 0.3em;
+
+    font-style: italic;
 }
 
 #div-visits {
