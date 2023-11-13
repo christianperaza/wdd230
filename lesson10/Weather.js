@@ -50,4 +50,3 @@ function displayResults(data) {
 }
 
 apiFetch();
-
