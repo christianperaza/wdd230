@@ -79,6 +79,7 @@
     #weather {
         width: 55%;
         margin: 0;
+        height: 100%;
     }
 
     #weather-map {
@@ -88,16 +89,20 @@
         align-items: center;
         width: 80%;
         margin: 0 auto;
+        height: 25em;
+        margin-bottom: 4em;
     }
 
     .map {
         margin: 0;
         width: 40%;
+        height: 100%;
     }
 
     #map-frame {
         margin: 0;
-        width: 100%;
+        width: 100%;  
+        height: 100%; 
     }
 
     .footer-link:hover, .footer-info-link:hover {

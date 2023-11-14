@@ -132,19 +132,10 @@
 
     #weather {
         width: 40%;
-        height: 18em;
     }
 
     .map {
         width: 55%;
-    }
-
-    #map-frame {
-        height: 18em;
-    }
-
-    #wea-title1, #wea-title2, .wea-humidity, .wea-humidity2 {
-        font-size: 0.9em;
     }
 
     #wea-sun {

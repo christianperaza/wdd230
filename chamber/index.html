@@ -23,7 +23,7 @@
     <meta property="og:image" content="https://elucabista.com/wp-content/uploads/2018/02/aliviadero_del_embalse_macagua.jpg">
 </head>
 
-<body onload="onLoad()">
+<body>
     
     <!-- HEADER -->
     <header class="header">
@@ -198,16 +198,57 @@
                 </div>
         
                 <div id="wea-div1">
-                    <div id="wea-sun"></div>
+                    <img id="wea-sun" src="" alt="">
                     <div id="wea-main-titles">
-                        <span><span id="temperature"></span>°F</span>
+                        <span id="temperature"></span>
                         <p id="description"></p>
                     </div>
                 </div>
+
+                <div class="wea-div2">
+                    <p class="wea-humidity">Humidity</p>
+                    <span id="humidity"></span>
+                </div>
+        
+                <div class="wea-div2 wind">
+                    <p class="wea-humidity">Wind Chill</p>
+                    <span id="wind-speed"></span>
+                </div>
     
                 <hr id="wea-hr">
+
+                <div class="forecast">
+                    <section class="forecast1">
+                        <div class="imgTempFore">
+                            <img class="imgForeContent" id="imgFore" src="" alt="">
+                            <span class="tempForeContent" id="tempFore"></span>
+                        </div>
+                        
+                        <span class="dateForeContent" id="dateFore"></span>
+                        <span class="dayForeContent" id="dayFore"></span>
+                    </section>
+
+                    <section class="forecast1">
+                        <div class="imgTempFore">
+                            <img class="imgForeContent" id="imgFore2" src="" alt="">
+                            <span class="tempForeContent" id="tempFore2"></span>
+                        </div>
+                        <span class="dateForeContent" id="dateFore2">
+                        </span>
+                        <span class="dayForeContent" id="dayFore2"></span>
+                    </section>
+
+                    <section class="forecast1">
+                        <div class="imgTempFore">
+                            <img class="imgForeContent" id="imgFore3" src="" alt="">
+                            <span class="tempForeContent" id="tempFore3"></span>
+                        </div>
+                        <span class="dateForeContent" id="dateFore3"></span>
+                        <span class="dayForeContent" id="dayFore3"></span>
+                    </section>
+                </div>
         
-                <div class="wea-div2">
+                <!-- <div class="wea-div2">
                     <p class="wea-humidity">Humidity</p>
                     <span><span id="humidity"></span>%</span>
                 </div>
@@ -215,7 +256,7 @@
                 <div class="wea-div2">
                     <p class="wea-humidity">Wind Chill</p>
                     <span id="wind-speed"></span>
-                </div>
+                </div> -->
             </div>
         </section>
     
