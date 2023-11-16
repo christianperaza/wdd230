@@ -247,6 +247,119 @@ body {
     border-color: var(--color2);
 }
 
+/* --------- BANNER MEET ----------*/
+#bannerMeet {
+    display: none;
+}
+
+#bannerMeet.show {
+    background: linear-gradient(to left, #05193700, var(--color1) 40%);
+    width: 90%;
+    height: 6.5em;
+    margin: 0 auto;
+    border-radius: 1em;
+    margin-top: 1em;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#bannerMeet.noShow {
+    display: none;
+}
+
+#imgMeetGreetDiv {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: end;
+
+    background-color: #1e1e1e;
+    border-radius: 1em;
+}
+
+#imgMeetGreet {
+    width: auto;
+    height: auto;
+    border-radius: 0 1em 1em 0;
+}
+
+#bannerMeetDiv {
+    padding: 1em 1.3em;
+}
+
+#bannerMeetTitle2 {
+    margin: 0;
+    font-weight: 500;
+    color: white;
+}
+
+#bannerMeetDiv h6 {
+    font-weight: 400;
+    margin: 0;
+    margin-top: .5em;
+    margin-bottom: 1.2em;
+    color: white;
+}
+
+#banner2Info {
+    font-size: x-small;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#banner2Info p {
+    padding: .7em 1.2em;
+    border-radius: 2em;
+    color: white;
+    font-weight: 500;
+    margin: 0;
+    border: 1px solid white;
+}
+
+#banner2Info a {
+    background-color: #FB8500;
+    color: white;
+    padding: .7em 1.2em;
+    border-radius: 2em;
+    margin: 0;
+    margin-left: .5em;
+    text-decoration-line: none;
+    font-weight: 500;
+}
+
+#exit {
+    border: none;
+    background-color: #004bad00;
+    position: absolute;
+    right: 1em;
+    top: .5em;
+}
+
+#exit:hover {
+    cursor: pointer;
+}
+
+#exitIcon {
+    color: #ffffffd0;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+/* --------- BANNER MEET LARGE ----------*/
+#bannerMeetLarge.show {
+    display: none;
+}
+
+#bannerMeetLarge {
+    display: none;
+}
+
 /* --------- BUTTON-DARK --------- */
 
 #button-dark {
@@ -294,7 +407,7 @@ body {
 #spot {
     width: 90%;
     margin: 0 auto;
-    margin-top: 3em;
+    margin-top: 2em;
     margin-bottom: 4em;
 
     display: flex;
