@@ -9,14 +9,10 @@ const bannerMeetLarge = document.querySelector("#bannerMeetLarge");
 const pBannerLarge = document.querySelector("#bannerInfopLarge");
 
 // SHOW BANNER ONLY MONDAY, TUESDAY, AND WEDNESDAY
-// const theMonths = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-
 const nowDate = Date.now();
 const newDate = new Date(nowDate);
 const day = newDate.getDay();
 
-// const theDate = newDate.getDate();
-// const theMonth = newDate.getMonth(); 
 console.log(day); // just to testing
 
 if (day === 1)
