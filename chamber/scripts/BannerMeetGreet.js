@@ -13,7 +13,7 @@ const pBannerLarge = document.querySelector("#bannerInfopLarge");
 
 const nowDate = Date.now();
 const newDate = new Date(nowDate);
-const day = newDate.getDay();
+const day = 1;//newDate.getDay();
 
 // const theDate = newDate.getDate();
 // const theMonth = newDate.getMonth(); 
@@ -48,9 +48,11 @@ else if (day === 3)
 // CLOSE BANNER 1
 buttonExit.addEventListener("click", () =>{
     bannerMeet.classList.add("noShow");
+    bannerMeetLarge.classList.add("noShow");
 })
 
 // CLOSE BANNER LARGE
 buttonExitLarge.addEventListener("click", () =>{
     bannerMeetLarge.classList.add("noShow");
+    bannerMeet.classList.add("noShow");
 })
