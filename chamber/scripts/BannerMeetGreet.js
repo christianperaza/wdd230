@@ -13,7 +13,7 @@ const pBannerLarge = document.querySelector("#bannerInfopLarge");
 
 const nowDate = Date.now();
 const newDate = new Date(nowDate);
-const day = 1;//newDate.getDay();
+const day = newDate.getDay();
 
 // const theDate = newDate.getDate();
 // const theMonth = newDate.getMonth(); 
