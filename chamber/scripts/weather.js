@@ -1,7 +1,10 @@
-// WEATHER...
+// --------------- WEATHER...
 
 // create const for each HTML value we need
-const weatherIcon = document.querySelector("#wea-sun");
+const weatherDiv1 = document.querySelector("#wea-div1");
+const weatherDivBelow = document.querySelector("#wea-main-titles");
+const weatherIcon = document.createElement("img");
+
 const temp = document.querySelector("#temperature");
 const description = document.querySelector("#description");
 const humidity = document.querySelector("#humidity");
@@ -50,6 +53,9 @@ function displayResults(data) {
 
     weatherIcon.setAttribute("src", iconsrc);
     weatherIcon.setAttribute("alt", `${descCapitalized} Icon`);
+    weatherIcon.setAttribute("loading", "lazy");
+
+    weatherDiv1.insertBefore(weatherIcon, weatherDivBelow);
 
     // humidity...
     humidity.innerHTML = `${data.main.humidity} %`;
@@ -60,21 +66,26 @@ function displayResults(data) {
 }
 
 
-// FORECAST...
+// --------------- FORECAST...
 
 // forecast HTML elements
 // 1° day
-const imgFore = document.querySelector("#imgFore");
+const imgTempForeDiv1 = document.querySelector(".imgTempFore1");
+const imgFore = document.createElement("img");
 const tempFore = document.querySelector("#tempFore");
 const dateFore = document.querySelector("#dateFore");
 const dayFore = document.querySelector("#dayFore");
+
 // 2° day
-const imgFore2 = document.querySelector("#imgFore2");
+const imgTempForeDiv2 = document.querySelector(".imgTempFore2");
+const imgFore2 = document.createElement("img");
 const tempFore2 = document.querySelector("#tempFore2");
 const dateFore2 = document.querySelector("#dateFore2");
 const dayFore2 = document.querySelector("#dayFore2");
+
 // 3° day
-const imgFore3 = document.querySelector("#imgFore3");
+const imgTempForeDiv3 = document.querySelector(".imgTempFore3");
+const imgFore3 = document.createElement("img");
 const tempFore3 = document.querySelector("#tempFore3");
 const dateFore3 = document.querySelector("#dateFore3");
 const dayFore3 = document.querySelector("#dayFore3");
@@ -114,16 +125,22 @@ function displayForecast(data) {
     const forecastIconsrc = `https://openweathermap.org/img/wn/${forecastIcon}@2x.png`;
     imgFore.setAttribute("src", forecastIconsrc);
     imgFore.setAttribute("alt", `${forecastDesc} Icon`);
+    imgFore.classList.add("imgForeContent");
+    imgTempForeDiv1.insertBefore(imgFore, tempFore);
     // 2° day
     const forecastIcon2 = `${data.list[16].weather[0].icon}`;
     const forecastIconsrc2 = `https://openweathermap.org/img/wn/${forecastIcon2}@2x.png`;
     imgFore2.setAttribute("src", forecastIconsrc2);
     imgFore2.setAttribute("alt", `${forecastDesc2} Icon`);
+    imgFore2.classList.add("imgForeContent");
+    imgTempForeDiv2.insertBefore(imgFore2, tempFore2);
     // 3° day
     const forecastIcon3 = `${data.list[24].weather[0].icon}`;
     const forecastIconsrc3 = `https://openweathermap.org/img/wn/${forecastIcon3}@2x.png`;
     imgFore3.setAttribute("src", forecastIconsrc3);
     imgFore3.setAttribute("alt", `${forecastDesc3} Icon`);
+    imgFore3.classList.add("imgForeContent");
+    imgTempForeDiv3.insertBefore(imgFore3, tempFore3);
 
     // forecast temperature...
     // 1° day
@@ -163,53 +180,3 @@ function displayForecast(data) {
 getApiFetch();
 getForecastFetch();
 
-
-
-
-// const apiKey = "7681555cd3915261b221e827c974ec01";
-
-// const fetchData = position => {
-//     const {latitude, longitude} = position. coords;
-
-//     fetch(`https://api.openweathermap.org/data/2.5/weather?units=imperial&lat=${latitude}&lon=${longitude}&appid=${apiKey}`)
-//     .then(response => response.json())
-//     .then(data => setWeatherData(data))
-// }
-
-// const setWeatherData = data => {
-//     console.log(data);
-//     const weatherData = {
-//         temperature: data.main.temp.toFixed(2),
-//         description: data.weather[0].description,
-//         humidity: data.main.humidity,
-//         windspeed: data.wind.speed,
-//         icon: data.weather[0].icon,
-//     }
-
-//     var img;
-//     img = document.createElement('img');
-
-//     Object.keys(weatherData).forEach(key => {
-//         document.getElementById(key).textContent = weatherData[key];
-
-//         const windChill = 35.74 + (0.6215 * weatherData.temperature) - (35.75 * weatherData.windspeed + 0.16) +  (0.4275 * weatherData.temperature * weatherData.windspeed + 0.16);
-//         document.getElementById("wind-speed").innerHTML = windChill.toFixed(2);
-
-//         const icon = weatherData.icon;
-//         img.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
-//         document.getElementById('wea-sun').appendChild(img);
-        
-        
-//     });
-
-    
-    
-
-
-
-
-// }
-
-// const onLoad = () => {
-//     navigator.geolocation.getCurrentPosition(fetchData);
-// }
