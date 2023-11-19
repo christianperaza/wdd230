@@ -1,6 +1,8 @@
 // create const for each HTML value we need
+const divWeather = document.querySelector("#div-weather");
+const divTempDescription = document.querySelector("#div-temp-descript");
 const cityName = document. querySelector("#city-name");
-const weatherIcon = document.querySelector("#wea-sun");
+const weatherIcon = document.createElement("img");
 const temp = document.querySelector("#temperature");
 const description = document.querySelector("#description");
 
@@ -50,6 +52,8 @@ function displayResults(data) {
 
     weatherIcon.setAttribute("src", iconsrc);
     weatherIcon.setAttribute("alt", `${descCapitalized} Icon`);
+
+    divWeather.insertBefore(weatherIcon, divTempDescription);
 }
 
 getApiFetch();

@@ -1,6 +1,7 @@
 // select HTML elements in the document
+const figureDiv = document.querySelector("#figure");
 const currentTemp = document.querySelector("#current-temp");
-const weatherIcon = document.querySelector("#weather-icon");
+const weatherIcon = document.createElement("img");
 const captionDesc = document.querySelector("figcaption");
 
 // store the lat, lon, and API key in a variable
@@ -36,6 +37,8 @@ function displayResults(data) {
 
     weatherIcon.setAttribute("src", iconsrc);
     weatherIcon.setAttribute("alt", "Weather Icon");
+
+    figureDiv.insertBefore(weatherIcon, captionDesc);
 
     // description...
     const desc = data.weather[0].description;
