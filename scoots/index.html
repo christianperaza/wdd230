@@ -27,11 +27,54 @@
     <!-- css files references -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css">   
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    
+    <!-- HEADER -->
+    <header>
+        <!-- mobile button -->
+        <div id="mobileButtonDiv">
+            <button id="menuButton">
+                <svg id="downIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>
+
+                <svg class="upIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- logo -->
+        <div id="logoDivHeader">
+            <h4 id="logo">Scoots</h4>
+        </div>
+    </header>
+
+    <!-- MOBILE NAVIGATION -->
+    <nav id="mobileNav">
+        <ul id="mobileNavList">
+            <li class="mobileNavItems">
+                <a href="index.html" class="mobileNavLinks">Home</a>
+            </li>
+            <li class="mobileNavItems">
+                <a href="#" class="mobileNavLinks">Rentals</a>
+            </li>
+            <li class="mobileNavItems">
+                <a href="#" class="mobileNavLinks">Reservations</a>
+            </li>
+            <li class="mobileNavItems">
+                <a href="#" class="mobileNavLinks">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
 </body>
 
 </html>
