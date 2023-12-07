@@ -1,3 +1,42 @@
 * {
     font-family: 'Montserrat', sans-serif;
 }
+
+body {
+    width: 100%;
+}
+
+/* --------- HEADER --------- */
+#homeHeader {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* logo */
+#logoYellowPart {
+    color: #ffa41b;
+}
+
+/* button */
+#menuButton {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#downIcon, #upIcon {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#upIcon {
+    display: none;
+}
+
+#downIcon {
+    
+}
