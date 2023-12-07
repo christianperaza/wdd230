@@ -2,6 +2,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+:root {
+    --yellow: #ffa41b;
+    --blue: #1ea1ed;
+}
+
 body {
     width: 100%;
 }
@@ -10,7 +15,6 @@ body {
 #homeHeader {
     width: 90%;
     margin: 0 auto;
-    margin-top: 1em;
 
     display: flex;
     align-items: center;
@@ -19,7 +23,12 @@ body {
 
 /* logo */
 #logoYellowPart {
-    color: #ffa41b;
+    color: var(--yellow);
+}
+
+#logoLink {
+    text-decoration-line: none;
+    color: black;
 }
 
 /* button */
@@ -33,10 +42,49 @@ body {
     height: 1.5em;
 }
 
-#upIcon {
+#upIcon, #downIcon.noShow {
     display: none;
 }
 
-#downIcon {
-    
+#upIcon.show {
+    display: block;
 }
+
+/* --------- MOBILE NAV --------- */
+/* nav list */
+#mobileNav.show {
+    background-color: var(--blue);
+    padding: 1em 0;
+}
+
+#mobileNavList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.mobileNavItems {
+    font-size: 12px;
+    margin: 1.5em 0;
+}
+
+.mobileNavLinks {
+    text-decoration-line: none;
+    color: white;
+}
+
+/* social media*/
+#mobileSocial {
+    width: 120px;
+    margin: 2em auto 1em auto;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.mobileSocialLink {
+    color: white;
+    text-decoration-line: none;
+}
+
