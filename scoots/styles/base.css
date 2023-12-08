@@ -284,14 +284,16 @@ body {
     font-weight: 600;
 }
 
-/* quote types of rentals */
-#rentalQuoteSection {
+/* ----- QUOTES ----- */
+
+/* quote types of rentals AND quote weather */
+#rentalQuoteSection, #weatherQuoteSection {
     width: 100%;
     background-color: var(--blue);
     margin-top: 1.5em;
 }
 
-#rentalQuoteDiv {
+#rentalQuoteDiv, #weatherQuoteDiv {
     width: 90%;
     margin: 0 auto;
 
@@ -303,14 +305,18 @@ body {
     padding: 2em 0;
 }
 
-#quoteImg {
+#rentalQuoteImg, #weatherQuoteImg {
     width: 30%;
 }
 
-#quoteP {
+#rentalQuoteP, #weatherQuoteP {
     text-align: end;
     color: white;
     width: 70%;
+}
+
+#weatherQuoteP {
+    text-align: start;
 }
 
 /* ----- INFO RESERVATIONS ----- */
@@ -359,4 +365,30 @@ body {
 #infoReservationLink {
     color: white;
     text-decoration-line: none;
+}
+
+/* ----- WEATHER ----- */
+
+/* weather titles */
+#weatherSection {
+    width: 90%;
+    margin: 0 auto;
+
+    margin-top: 2.5em;
+}
+
+#weatherSubTitle {
+    color: var(--yellow);
+    margin-bottom: 0;
+}
+
+#weatherTitle {
+    margin-top: .8em;
+    width: 100%;
+
+    font-weight: 600;
+}
+
+#weatherDiv {
+    width: 100%;
 }
