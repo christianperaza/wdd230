@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
 * {
     font-family: 'Montserrat', sans-serif;
 }
@@ -22,6 +24,11 @@ body {
 }
 
 /* logo */
+#logo {
+    font-weight: 600;
+    font-size: 20px;
+}
+
 #logoYellowPart {
     color: var(--yellow);
 }
@@ -52,11 +59,19 @@ body {
 
 /* --------- MOBILE NAV --------- */
 /* nav list */
+#mobileNav {
+    display: none;
+}
+
 #mobileNav.show {
+    display: block;
+    
     background-color: var(--blue);
     padding: 1em 0;
 
     transition: .2s;
+
+    margin-bottom: 2em;
 }
 
 #mobileNavList {
@@ -76,6 +91,14 @@ body {
     color: white;
 }
 
+.mobileNavLinks.home {
+    background-color: white;
+    color: var(--blue);
+    font-weight: bolder;
+    padding: .5em 1em;
+    border-radius: 1.5em;
+}
+
 /* social media*/
 #mobileSocial {
     width: 120px;
@@ -90,3 +113,94 @@ body {
     text-decoration-line: none;
 }
 
+/* --------- MAIN --------- */
+/* banner */
+#homeBanner {
+    width: 100%;
+
+
+    position: relative;
+}
+
+#homeBannerTitles {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#homeBannerH1 {
+    font-weight: 700;
+    font-size: 20px;
+    width: 190px;
+    line-height: 27px;
+}
+
+#homeBannerLink {
+    text-decoration-line: none;
+    color: white;
+}
+
+#homeBannerLinkTitle {
+    font-weight: 600;
+    font-size: 13px;
+    width: 130px;
+    text-align: center;
+    color: white;
+
+    background-color: var(--yellow);
+
+    padding: .8em .2em;
+    border-radius: 2em;
+
+    box-shadow: -6px 6px var(--blue);
+
+    margin-top: 1.5em;
+    margin-left: 6px;
+}
+
+#homeBannerLogos {
+    width: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.5em;
+}
+
+.bannerLogo {
+    width: 35px;
+    height: 35px;
+    color: #a6a6a6;
+}
+
+/* banner img */
+#HomeBannerImg, #HomeBannerImgCar {
+    width: 100%;
+}
+
+#HomeBannerImg img {
+    width: 50%;
+    height: auto;
+
+    position: absolute;
+    top: 35%;
+    right: 0;
+
+    border-radius: 5em 0 0 5em;
+}
+
+@media screen and (max-width: 320px) {
+    #HomeBannerImg img {
+        display: none;
+    }
+} /* this block ABOVE is for size super small, such as Galaxy Fold */
+
+#HomeBannerImgCar img {
+    position: absolute;
+    top: 20%;
+    right: 0;
+
+    width: 40%;
+    height: auto;
+
+    
+}
