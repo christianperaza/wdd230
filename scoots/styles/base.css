@@ -173,11 +173,11 @@ body {
 }
 
 /* banner img */
-#HomeBannerImg, #HomeBannerImgCar {
+#homeBannerImg, #homeBannerImgCar {
     width: 100%;
 }
 
-#HomeBannerImg img {
+#homeBannerImg img {
     width: 50%;
     height: auto;
 
@@ -189,18 +189,95 @@ body {
 }
 
 @media screen and (max-width: 320px) {
-    #HomeBannerImg img {
+    #homeBannerImg img {
         display: none;
     }
 } /* this block ABOVE is for size super small, such as Galaxy Fold */
 
-#HomeBannerImgCar img {
+#homeBannerImgCar img {
     position: absolute;
     top: 20%;
     right: 0;
 
     width: 40%;
     height: auto;
-
-    
 }
+
+/* --------- SECTIONS --------- */
+/* types of rentals */
+#typeRentalsSection {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4em;
+
+    text-align: right;
+}
+
+#rentalSubTitle {
+    color: var(--yellow);
+    margin-bottom: 0;
+}
+
+#rentalTitle {
+    margin-top: .8em;
+    width: 80%;
+    margin-left: auto;
+
+    font-weight: 600;
+}
+
+#rentalMainDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    text-align: left;
+}
+
+.rentalDiv {
+    display: flex;
+    flex-direction: column;
+
+    width: 30%;
+    position: relative;
+}
+
+.rentalImg {
+    background-color: var(--yellow);
+    width: 100%;
+
+    padding: 65% 0;
+    border-radius: .8em;
+}
+
+#hondaScooter, #hondaAtv, #jeep {
+    position: absolute;
+    height: auto;
+}
+
+#hondaScooter {
+    width: 95%;
+    align-self: end;
+    top: 5%;
+}
+
+#hondaAtv {
+    align-self: flex-start;
+    width: 115%;
+    top: 10%;
+}
+
+#jeep {
+    align-self: flex-start;
+    width: 106%;
+    top: 5%;
+}
+
+.rentalName {
+    font-size: 12px;
+    margin-top: 1em;
+
+    font-weight: 600;
+}
+
