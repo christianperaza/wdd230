@@ -13,6 +13,61 @@ body {
     width: 100%;
 }
 
+/* --------- CLOSEABLE MESSAGE --------- */
+/* closeable message */
+#closeableMessageSection {
+    width: 100%;
+    background-color: var(--blue);
+    
+    position: relative;
+}
+
+#closeableMessageDiv {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em 0;
+    text-align: start;
+}
+
+#closeableMessageP {
+    margin: 0;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    width: 90%;
+    line-height: 1.7;
+}
+
+#closeableMessageP::before {
+    content: "🌥️ ";
+}
+
+#closeableMessageLink {
+    color: white;
+}
+
+#closeableMessageButton {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+
+    position: absolute;
+    top: 30%;
+    right: 10px;
+}
+
+#closeableMessageIconButton {
+    color: white;
+    stroke-width: 5;
+}
+
+#closeableMessageIconButton:hover {
+    cursor: pointer;
+}
+
+#closeableMessageSection.noShow {
+    display: none;
+}
+
 /* --------- HEADER --------- */
 #homeHeader {
     width: 90%;

@@ -1,5 +1,8 @@
 // ------------- CURRENT WEATHER ------------- //
 
+// create const for each HTML value we need
+const tempMax = document.querySelector("#tempMax");
+
 // store latitude, longitude, and apiKey
 const lat = 20.508714;
 const lon = -86.946762;
@@ -21,3 +24,10 @@ async function getApiFetch() {
         console.log(error);
     } 
 }
+
+function displayResults(data) {
+    // temp max...
+    tempMax.innerHTML = `${Math.trunc(data.main.temp_max)} &deg;F`;
+}
+
+getApiFetch();
