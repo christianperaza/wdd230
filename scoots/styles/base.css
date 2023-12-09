@@ -349,7 +349,7 @@ body {
 }
 
 #rentalQuoteDiv, #weatherQuoteDiv {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 
     display: flex;
@@ -367,7 +367,10 @@ body {
 #rentalQuoteP, #weatherQuoteP {
     text-align: end;
     color: white;
-    width: 70%;
+    width: 60%;
+
+    font-size: 13px;
+    line-height: 1.5;
 }
 
 #weatherQuoteP {
