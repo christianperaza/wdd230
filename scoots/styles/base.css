@@ -609,6 +609,8 @@ body {
 #hrFooter {
     width: 90%;
     margin: 1.5em auto;
+
+    border: thin solid white;
 }
 
 /* logo */
@@ -674,10 +676,10 @@ body {
     flex-direction: row;
     justify-content: space-between;
 
-    width: 70px;
+    width: 100px;
 }
 
-/* refernce */
+/* reference */
 #footerAttributionDiv {
     width: 80%;
     margin: 2em auto;
