@@ -122,7 +122,7 @@ function displayForecast(datas) {
         if (fTime == 15)
         {
             // date and time
-            forecastTitle.innerHTML = `Tomorrow, ${days[fD.getDay()]} ${fD.getDate()} at ${fTime}:00 h`;
+            forecastTitle.innerHTML = `Tomorrow at ${fTime}:00 h`;
 
             
 
