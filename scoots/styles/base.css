@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -447,3 +447,61 @@ body {
 #weatherDiv {
     width: 100%;
 }
+
+/* current weather */
+#currentDiv {
+    background-color: var(--blue);
+    border-radius: 1em;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#currentIconDesc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#currentDescDiv, #currentTempDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+#currentTempDiv {
+    text-align: end;
+    margin-right: 18px;
+}
+
+#currentDescription, #currentDate , #currentTemp, #currentHumidity {
+    color: white;
+}
+
+#currentDescription {
+    font-weight: 500;
+    font-size: 12px;
+
+    margin-bottom: .2em;
+}
+
+#currentDate {
+    font-size: 12px;
+    margin-top: .2em;
+}
+
+#currentTemp {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#currentHumidity {
+    font-size: 12px;
+}
+
+.currentIcon {
+    width: 40%;
+}
+
+

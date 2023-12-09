@@ -2,6 +2,16 @@
 
 // create const for each HTML value we need
 const tempMax = document.querySelector("#tempMax");
+const weatherDiv = document.querySelector("#weatherDiv");
+
+const currentIconDesc = document.querySelector("#currentIconDesc");
+const currentIconElement = document.createElement("img");
+const currentDescDiv = document.querySelector("#currentDescDiv");
+const currentDescription = document.querySelector("#currentDescription");
+const currentDate = document.querySelector("#currentDate");
+
+const currentTemp = document.querySelector("#currentTemp");
+const currentHumidity = document.querySelector("#currentHumidity");
 
 // store latitude, longitude, and apiKey
 const lat = 20.508714;
@@ -26,8 +36,48 @@ async function getApiFetch() {
 }
 
 function displayResults(data) {
-    // temp max...
+    // add temp max...
     tempMax.innerHTML = `${Math.trunc(data.main.temp_max)} &deg;F`;
+
+    // description...
+    const description = data.weather[0].description;
+    const descSplited = description.split(" ");
+
+    for (let index = 0; index < descSplited.length; index++) {
+        descSplited[index] = descSplited[index].charAt(0).toUpperCase() + descSplited[index].slice(1); 
+    }
+
+    const descCapitalized = descSplited.join(" ");
+    currentDescription.innerHTML = `${descCapitalized}`;
+
+    // icon...
+    const icon = `${data.weather[0].icon}`;
+    const iconSrc = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+    
+    currentIconElement.setAttribute("src", iconSrc);
+    currentIconElement.setAttribute("alt", `${descCapitalized} Icon`);
+    currentIconElement.setAttribute("loading", "lazy");
+    currentIconElement.classList.add("currentIcon");
+
+    currentIconDesc.insertBefore(currentIconElement, currentDescDiv);
+
+
+    // date...
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+    const date = `${data.dt}`;
+    const d = new Date(date * 1000);
+
+    currentDate.innerHTML = `${days[d.getDay()]} ${d.getDate()}, ${d.getFullYear()}`;
+
+    // temp...
+    const temp = `${data.main.temp}`;
+    currentTemp.innerHTML = `${Math.trunc(temp)} &deg;F`;
+
+    // humidity...
+    const humidity = `${data.main.humidity}`;
+    currentHumidity.innerHTML = `Humidity ${humidity}%`;
+
 }
 
 getApiFetch();
