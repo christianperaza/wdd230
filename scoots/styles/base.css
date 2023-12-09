@@ -551,3 +551,153 @@ body {
 }
 
 
+/* --------- FOOTER --------- */
+
+#footerHome {
+    background-color: var(--blue);
+    width: 100%;
+    margin-top: 7em;
+    padding: 3em 0 5em 0;
+
+    position: relative;
+}
+
+/* island image */
+#footerIsland {
+    position: absolute;
+    z-index: -1;
+    width: 80px;
+
+    left: 30px;
+    bottom: 95%;
+}
+
+/* links */
+#footerLinkDiv {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#footerLinkList {
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerLink {
+    color: white;
+    text-decoration-line: none;
+    font-size: 12px;
+}
+
+.footerLink.home {
+    background-color: white;
+    color: var(--blue);
+
+    font-weight: bolder;
+    padding: .5em 1em;
+    border-radius: 1.5em;
+}
+
+/* line hr */
+#hrFooter {
+    width: 90%;
+    margin: 1.5em auto;
+}
+
+/* logo */
+#logoDivFooter {
+    width: 80%;
+    margin: 0 auto;
+    text-align: start;
+}
+
+#logoLinkFooter {
+    color: white;
+    text-decoration-line: none;
+}
+
+#logoFooter {
+    font-weight: 600;
+    font-size: 20px;    
+}
+
+/* information */
+#footerInfoDiv {
+    width: 80%;
+    margin: 0 auto;
+    text-align: start;
+}
+
+.footerTitle {
+    color: white;
+    font-size: 12px;
+    margin-bottom: 1em;
+}
+
+.footerInfoItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-bottom: .5em;
+}
+
+.footerIconsDiv {
+    color: white;
+    width: 10%;
+}
+
+.footerInfoItems p {
+    font-size: 12px;
+    color: white;
+    width: 90%;
+
+    margin: 0;
+}
+
+/* social media */
+#footerSocialDiv {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#footerSocialIconDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 70px;
+}
+
+/* refernce */
+#footerAttributionDiv {
+    width: 80%;
+    margin: 2em auto;
+    text-align: center;
+}
+
+#footerAttributionLink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+.footerTitle.ref {
+    margin: 0 5px 0 0;
+}
+
+/* copyright */
+.footerTitle.copyright {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.7;
+} 
