@@ -57,7 +57,6 @@ body {
 
 #closeableMessageIconButton {
     color: white;
-    stroke-width: 5;
 }
 
 #closeableMessageIconButton:hover {
