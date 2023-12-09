@@ -80,4 +80,80 @@ function displayResults(data) {
 
 }
 
+// ------------- FORECAST WEATHER ------------- //
+
+const forecastTitle = document.querySelector("#forecastTitle");
+const forecastTemp = document.querySelector("#forecastTemp");
+const forecastDescription = document.querySelector("#forecastDescription");
+
+const forecastInfoDiv = document.querySelector("#forecastInfoDiv");
+const forecastIcon = document.createElement("img");
+
+// cnt parameter
+const cnt = 8;
+
+const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?units=imperial&lat=${lat}&lon=${lon}&appid=${apiKey}&cnt=${cnt}`;
+
+async function getForecastFetch() {
+    try {
+        const forecastResponse = await fetch(forecastURL);
+        if (forecastResponse.ok) {
+            const foreData = await forecastResponse.json();
+            console.log(foreData.list); // testing
+            displayForecast(foreData.list);
+        } else {
+            throw Error(await forecastResponse.text());
+        }
+    } catch (error) {
+        console.log(error);
+    } 
+}
+
+function displayForecast(datas) {
+
+    for (let index = 0; index < datas.length; index++) {
+
+        const fDate = datas[index].dt;
+        const fD = new Date(fDate * 1000);
+        const fTime = fD.getHours();
+
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+        if (fTime == 15)
+        {
+            // date and time
+            forecastTitle.innerHTML = `Tomorrow, ${days[fD.getDay()]} ${fD.getDate()} at ${fTime}:00 h`;
+
+            
+
+            // temp
+            forecastTemp.innerHTML = `${Math.trunc(datas[index-1].main.temp)} &deg;F`;
+
+            // description
+            const description = datas[index-1].weather[0].description;
+            const descSplited = description.split(" ");
+
+            for (let index = 0; index < descSplited.length; index++) {
+                descSplited[index] = descSplited[index].charAt(0).toUpperCase() + descSplited[index].slice(1); 
+            }
+
+            const descCapitalized = descSplited.join(" ");
+            forecastDescription.innerHTML = `${descCapitalized}`;
+
+            // icon
+            const icon = `${datas[index-1].weather[0].icon}`;
+            const iconSrc = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+    
+            forecastIcon.setAttribute("src", iconSrc);
+            forecastIcon.setAttribute("alt", `${descCapitalized} Icon`);
+            forecastIcon.setAttribute("loading", "lazy");
+            forecastIcon.classList.add("forecastIcon");
+
+            forecastInfoDiv.insertBefore(forecastIcon, forecastTemp);
+        }
+    }
+
+}
+
 getApiFetch();
+getForecastFetch();

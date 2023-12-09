@@ -430,6 +430,7 @@ body {
     margin: 0 auto;
 
     margin-top: 2.5em;
+    margin-bottom: 2.5em;
 }
 
 #weatherSubTitle {
@@ -502,6 +503,51 @@ body {
 
 .currentIcon {
     width: 40%;
+}
+
+/* forecast weather */
+#forecastDiv {
+    background-color: #efefef;
+    border-radius: 1em;
+    margin-top: .5em;
+}
+
+#forecastTitle {
+    margin: 0;
+    padding-top: 1em;
+
+    margin-left: 18px;
+}
+
+#forecastMainDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: .5em;
+    padding-bottom: .5em;
+}
+
+#forecastInfoDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 18px;
+}
+
+.forecastIcon {
+    width: 30%;
+}
+
+#forecastTemp {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#forecastDescription {
+    margin-right: 30px;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 
