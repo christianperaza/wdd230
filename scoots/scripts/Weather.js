@@ -127,10 +127,10 @@ function displayForecast(datas) {
             
 
             // temp
-            forecastTemp.innerHTML = `${Math.trunc(datas[index-1].main.temp)} &deg;F`;
+            forecastTemp.innerHTML = `${Math.trunc(datas[index].main.temp)} &deg;F`;
 
             // description
-            const description = datas[index-1].weather[0].description;
+            const description = datas[index].weather[0].description;
             const descSplited = description.split(" ");
 
             for (let index = 0; index < descSplited.length; index++) {
@@ -141,7 +141,7 @@ function displayForecast(datas) {
             forecastDescription.innerHTML = `${descCapitalized}`;
 
             // icon
-            const icon = `${datas[index-1].weather[0].icon}`;
+            const icon = `${datas[index].weather[0].icon}`;
             const iconSrc = `https://openweathermap.org/img/wn/${icon}@2x.png`;
     
             forecastIcon.setAttribute("src", iconSrc);
