@@ -514,9 +514,12 @@ body {
     margin-top: .5em;
 }
 
-#forecastTitle {
+.forecastTitle {
     margin: 0;
     padding-top: 1em;
+
+    font-size: 12px;
+    font-weight: 600;
 
     margin-left: 18px;
 }

@@ -82,10 +82,12 @@ function displayResults(data) {
 
 // ------------- FORECAST WEATHER ------------- //
 
-const forecastTitle = document.querySelector("#forecastTitle");
+const forecastDiv = document.querySelector("#forecastDiv");
+const forecastTitle = document.createElement("div");
 const forecastTemp = document.querySelector("#forecastTemp");
 const forecastDescription = document.querySelector("#forecastDescription");
 
+const forecastMainDiv = document.querySelector("#forecastMainDiv");
 const forecastInfoDiv = document.querySelector("#forecastInfoDiv");
 const forecastIcon = document.createElement("img");
 
@@ -123,7 +125,9 @@ function displayForecast(datas) {
         {
             // date and time
             forecastTitle.innerHTML = `Tomorrow at ${fTime}:00 h`;
+            forecastTitle.classList.add("forecastTitle");
 
+            forecastDiv.insertBefore(forecastTitle, forecastMainDiv);
             
 
             // temp
