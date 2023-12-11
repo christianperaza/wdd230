@@ -171,7 +171,7 @@ body {
 /* banner */
 #homeBanner {
     width: 100%;
-
+    margin-bottom: 15%;
 
     position: relative;
 }
@@ -183,9 +183,9 @@ body {
 
 #homeBannerH1 {
     font-weight: 700;
-    font-size: 20px;
-    width: 190px;
-    line-height: 27px;
+    font-size: 5vw;
+    width: 55%;
+    line-height: 130%;
 }
 
 #homeBannerLink {
@@ -232,11 +232,11 @@ body {
 }
 
 #homeBannerImg img {
-    width: 50%;
+    width: 45%;
     height: auto;
 
     position: absolute;
-    top: 35%;
+    top: 30%;
     right: 0;
 
     border-radius: 5em 0 0 5em;
@@ -250,12 +250,28 @@ body {
 
 #homeBannerImgCar img {
     position: absolute;
-    top: 20%;
+    top: 10%;
     right: 0;
 
     width: 40%;
     height: auto;
 }
+
+/* litle changes when screen is 600px  */
+@media screen and (min-width: 600px) {
+    #homeBannerH1 {
+        font-size: 4vw;
+    }
+
+    #homeBannerImg img {
+        top: 20%;
+    }
+
+    #homeBannerImgCar img {
+        top: -3%;
+    }
+}
+
 
 /* --------- SECTIONS --------- */
 
@@ -708,3 +724,14 @@ body {
     text-align: center;
     line-height: 1.7;
 } 
+
+
+
+/* 750px */
+
+@media screen and (min-width: 750px) {
+    #homeHeader, #homeBannerTitles, #typeRentalsSection {
+        width: 85%;
+    }
+
+}
