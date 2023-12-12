@@ -96,6 +96,9 @@ body {
 #menuButton {
     border: none;
     background-color: rgba(0, 0, 0, 0);
+
+    display: flex;
+    align-items: center;
 }
 
 #downIcon, #upIcon {
@@ -291,6 +294,11 @@ body {
     margin-top: 4em;
 
     text-align: right;
+}
+
+/* things for large view */
+#typeRentalImgDiv, #rentalQuotePLarge {
+    display: none;
 }
 
 /* titles types of rentals */
@@ -777,6 +785,8 @@ body {
     .largeNavLinks:hover {
         border-bottom: 3px solid var(--yellow);
         padding-bottom: .5em;
+
+        font-weight: 500;
     }
 
     .largeNavLinks.home {
@@ -815,5 +825,126 @@ body {
     #mobileNavList {
         display: none;
     }
+
+    /* button */
+    #menuButton:hover {
+        background-color: #d9d9d9;
+        border-radius: 2em;
+        
+    }
+
+    /* banner */
+    #homeBanner {
+        margin-top: 7%;
+        margin-bottom: 10%;
+    }
+
+    #homeBannerH1 {
+        font-size: 3.5vw;
+        width: 45%;
+    }
+
+    #homeBannerImg img {
+        top: 10%;
+        border-radius: 8em 0 0 8em;
+    }
+
+    #homeBannerImgCar img {
+        top: -10%;
+        width: 35%;
+    }
+
+    #homeBannerLinkTitle:hover, #infoReservationLinkTitle:hover {
+        background-color: #f7980b;
+    }
+
+    /* SECTIONS */
+
+    /* rental */
+    #rentalQuoteSection {
+        display: none;
+    }
+
+    #typeRentalImgDiv, #rentalQuotePLarge {
+        display: block;
+    }  
+
+    #typeRentalDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    #typeRentalsSection {
+        margin: 0;
+        width: 60%;
+        text-align: start;
+    }
+
+    #rentalSubTitle {
+        font-size: 13px;
+    }
+
+    #rentalTitle {
+        margin: .4em 0 .8em 0;
+        font-size: 20px;
+        width: 100%;
+        font-weight: 700;
+    }
+
+    #rentalQuotePLarge {
+        font-size: 13px;
+        margin-top: 0;
+        margin-bottom: 2.2em;
+        line-height: 1.5em;
+    }
+
+    #rentalQuotePLarge strong {
+        color: var(--yellow);
+    }
+
+    #typeRentalImgDiv {
+        width: 30%;
+    }
+
+    #typeRentalImgDiv img {
+        width: 100%;
+    }
+
+    /* info reservation */
+    #infoReservationSection {
+        background-color: var(--blue);
+
+        padding: 5em 0;
+    }
+
+    #infoReservationTitle {
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        width: 70%;
+        margin-bottom: 1.5em;
+    }
+
+    #infoReservationP {
+        font-size: 13px;
+    }
+
+    #infoReservationP, #infoReservationP strong {
+        color: white;
+    }
+
+    #infoReservationLinkTitle {
+        width: 150px;
+        box-shadow: -6px 6px white;
+    }
+
+
+
+
 
 }
