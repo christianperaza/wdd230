@@ -484,6 +484,11 @@ body {
     width: 100%;
 }
 
+/* things for large view */
+#weatherImgDiv, #weatherQuotePLarge {
+    display: none;
+}
+
 /* current weather */
 #currentDiv {
     background-color: var(--blue);
@@ -885,25 +890,25 @@ body {
         text-align: start;
     }
 
-    #rentalSubTitle {
+    #rentalSubTitle, #weatherSubTitle {
         font-size: 13px;
     }
 
-    #rentalTitle {
+    #rentalTitle, #weatherTitle {
         margin: .4em 0 .8em 0;
         font-size: 20px;
         width: 100%;
         font-weight: 700;
     }
 
-    #rentalQuotePLarge {
+    #rentalQuotePLarge, #weatherQuotePLarge {
         font-size: 13px;
         margin-top: 0;
         margin-bottom: 2.2em;
         line-height: 1.5em;
     }
 
-    #rentalQuotePLarge strong {
+    #rentalQuotePLarge strong, #weatherQuotePLarge strong {
         color: var(--yellow);
     }
 
@@ -943,6 +948,42 @@ body {
         box-shadow: -6px 6px white;
     }
 
+    /* weather */
+    #weatherImgDiv, #weatherQuotePLarge {
+        display: block;
+    }
+
+    #weatherQuoteSection {
+        display: none;
+    }
+
+    #weatherMainDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    #weatherImgDiv {
+        width: 30%;
+    }
+
+    #weatherImgDiv img {
+        width: 100%;
+    }
+
+    #weatherSection {
+        width: 57%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #weatherSubTitle {
+        margin: 0;
+    }
 
 
 

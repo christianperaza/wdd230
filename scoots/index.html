@@ -228,40 +228,54 @@
         </div>
 
         <!-- weather section -->
-        <section id="weatherSection">
-            <h5 id="weatherSubTitle">Current weather information</h5>
-            <h4 id="weatherTitle">Blue skies, sunshine, everything's fine 'cause you were made for sunny days</h4>
+        <div id="weatherMainDiv">
 
-            <div id="weatherDiv">
-                <div id="currentDiv">
-                    <div id="currentIconDesc">
+            <!-- info -->
+            <section id="weatherSection">
+                <h5 id="weatherSubTitle">Current weather information</h5>
+                <h4 id="weatherTitle">Blue skies, sunshine, everything's fine 'cause you were made for sunny days</h4>
 
-                        <div id="currentDescDiv">
-                            <span id="currentDescription"></span>
-                            <span id="currentDate"></span>
+                <p id="weatherQuotePLarge">What are you doing with those jackets and long pants? <strong>Put on something better for this weather</strong></p>
+
+                <div id="weatherDiv">
+                    <div id="currentDiv">
+                        <div id="currentIconDesc">
+
+                            <div id="currentDescDiv">
+                                <span id="currentDescription"></span>
+                                <span id="currentDate"></span>
+                            </div>
                         </div>
-                    </div>
 
-                    <div id="currentTempDiv">
+                        <div id="currentTempDiv">
                         <span id="currentTemp"></span>
                         <span id="currentHumidity"></span>
-                    </div>
-                </div>
-
-                <div id="forecastDiv">
-
-                    <div id="forecastMainDiv">
-                        <div id="forecastInfoDiv">
-
-                            <span id="forecastTemp"></span>
                         </div>
+                    </div>
+
+                    <div id="forecastDiv">
+
+                        <div id="forecastMainDiv">
+                            <div id="forecastInfoDiv">
+
+                                <span id="forecastTemp"></span>
+                            </div>
                     
 
-                        <span id="forecastDescription"></span>
+                            <span id="forecastDescription"></span>
+                        </div>
                     </div>
                 </div>
+            </section>
+
+            <!-- image -->
+            <div id="weatherImgDiv">
+                <img src="images/boy-climb-white.png" alt="Boy Climbing With White Background" width="800" loading="lazy">
             </div>
-        </section>
+
+        </div>
+
+        
         
 
     </main>
