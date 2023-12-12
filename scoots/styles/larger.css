@@ -14,6 +14,10 @@
         display: none;
     }
 
+    #logo {
+        font-size: 23px;
+    }
+
     /* social */
     #mobileSocialLarge {
         display: block;
@@ -31,5 +35,140 @@
     .mobileSocialIcon:hover {
         color: var(--yellow);
     }
+
+    /* --------- BANNER --------- */
+
+    /* titles */
+    #homeBannerH1 {
+        font-size: 2.8vw;
+        width: 40%;
+    }
+
+    #homeBannerP {
+        display: block;
+
+        width: 45%;
+        line-height: 1.5em;
+        font-size: 13px;
+    }
+
+    #homeBannerP strong {
+        color: var(--blue);
+    }
+
+    #bannerLinkLogosDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 330px;
+    }
+
+    /* link */
+    #homeBannerLinkTitle {
+        font-size: 14px;
+        margin-top: 2em;
+        width: 150px;
+    }
+
+    /* logos */
+    #homeBannerLogos {
+        width: 150px;
+    }
+
+    .bannerLogo {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* images */
+    #homeBannerImg img {
+        width: 40%;
+        top: 20%;
+    }
+
+    #homeBannerImgCar img {
+        top: -3%;
+        width: 30%;
+    }
+
+    /* --------- SECTIONS --------- */
+
+    #typeRentalDiv, #weatherMainDiv, #hrFooterLarge, #logoDivFooter, #infoLinksFooterLargeDiv {
+        width: 80%;
+    }
+
+    /* --------- FOOTER --------- */
+
+    #footerHome {
+        margin-top: 10em;
+    }
+
+    /* island img */ 
+    #footerIsland {
+        left: 10%;
+        top: -75px;
+        width: 120px;
+    }
+
+    /* social icons */
+    .mobileSocialIcon.footer {
+        color: white;
+    }
+
+    .mobileSocialIcon.footer:hover {
+        cursor: pointer;
+    }
+
+}
+
+
+
+
+/* 1200px */
+
+@media screen and (min-width: 1200px) {
+
+    /* --------- HEADER --------- */
+    #largeNavList {
+        width: 350px;
+    }
+
+    .largeNavItems {
+        font-size: 14px;
+    }
+
+    /* --------- BANNER --------- */
+    #homeBanner {
+        margin-top: 6%;
+    }
+
+
+    #homeBannerH1 {
+        width: 35%;
+    }
+
+    #homeBannerP {
+        width: 40%;
+        font-size: 16px;
+    }
+
+    /* images */
+    #homeBannerImg img {
+        width: 40%;
+        top: 15%;
+        border-radius: 10em 0 0 10em;
+    }
+
+    #homeBannerImgCar img {
+        top: -6%;
+        width: 28%;
+    }
+
+    /* --------- SECTIONS --------- */
+
+    /* type of rentals */
+    
 
 }
