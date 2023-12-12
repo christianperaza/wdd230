@@ -115,9 +115,10 @@ body {
 }
 
 /* --------- LARGE NAV --------- */
-#largeNav {
+#largeNav, #mobileSocialLarge {
     display: none;
 }
+
 
 /* --------- MOBILE NAV --------- */
 /* nav list */

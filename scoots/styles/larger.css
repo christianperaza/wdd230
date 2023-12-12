@@ -1,0 +1,35 @@
+:root {
+    --yellow: #ffa41b;
+    --blue: #1ea1ed;
+}
+
+/* 1000px */
+
+@media screen and (min-width: 1000px) {
+
+    /* --------- NAVIGATION --------- */
+
+    /* no display button */
+    #mobileButtonDiv, #mobileSocial {
+        display: none;
+    }
+
+    /* social */
+    #mobileSocialLarge {
+        display: block;
+        width: 110px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mobileSocialIcon {
+        color: var(--blue);
+    }
+
+    .mobileSocialIcon:hover {
+        color: var(--yellow);
+    }
+
+}

@@ -12,6 +12,16 @@
         width: 85%;
     }
 
+    /* closeable message */
+    #closeableMessageDiv {
+        text-align: center;
+    }
+
+    #closeableMessageP {
+        width: 100%;
+        font-size: 13px;
+    }
+
     /* logo */
     #logoYellowPart:hover {
         color: var(--blue);
