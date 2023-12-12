@@ -668,6 +668,10 @@ body {
 #logoFooter {
     font-weight: 600;
     font-size: 20px;    
+} 
+
+#hrFooterLarge {
+    display: none;
 }
 
 /* information */
@@ -695,6 +699,9 @@ body {
 .footerIconsDiv {
     color: white;
     width: 10%;
+
+    display: flex;
+    align-items: center;
 }
 
 .footerInfoItems p {
@@ -739,6 +746,11 @@ body {
     margin: 0 5px 0 0;
 }
 
+/* links large */
+#footerLinkDivLarge {
+    display: none;
+}
+
 /* copyright */
 .footerTitle.copyright {
     width: 80%;
@@ -749,243 +761,4 @@ body {
 
 
 
-/* 750px */
 
-@media screen and (min-width: 750px) {
-
-    /* general widths */
-    #homeHeader, #homeBannerTitles, #typeRentalsSection {
-        width: 85%;
-    }
-
-    /* logo */
-    #logoYellowPart:hover {
-        color: var(--blue);
-    }
-
-    /* large navigation */
-    #largeNav {
-        display: block;
-    } 
-
-    #largeNavList {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        list-style: none;
-        padding: 0;
-        width: 320px;
-    }
-
-    .largeNavItems {
-        font-size: 13px;
-    }
-
-    .largeNavLinks {
-        color: black;
-        text-decoration-line: none;
-    }
-
-    .largeNavLinks:hover {
-        border-bottom: 3px solid var(--yellow);
-        padding-bottom: .5em;
-
-        font-weight: 500;
-    }
-
-    .largeNavLinks.home {
-        font-weight: 700;
-        border-bottom: 3px solid var(--yellow);
-        padding-bottom: .5em;
-    } 
-
-    .largeNavLinks.home:hover {
-        border-bottom: 3px solid var(--blue);
-    }
-
-    #socialMediaTitleDiv {
-        width: 100%;
-        display: block;
-        color: white;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    #mobileSocial {
-        margin: 1em auto;
-        width: 150px;
-    }
-
-    .mobileSocialIcon {
-        width: 1.1em;
-        height: 1.1em;
-    }
-
-    #menuButton:hover {
-        cursor: pointer;
-    }
-
-    /* mobile navigation */
-    #mobileNavList {
-        display: none;
-    }
-
-    /* button */
-    #menuButton:hover {
-        background-color: #d9d9d9;
-        border-radius: 2em;
-        
-    }
-
-    /* banner */
-    #homeBanner {
-        margin-top: 7%;
-        margin-bottom: 10%;
-    }
-
-    #homeBannerH1 {
-        font-size: 3.5vw;
-        width: 45%;
-    }
-
-    #homeBannerImg img {
-        top: 10%;
-        border-radius: 8em 0 0 8em;
-    }
-
-    #homeBannerImgCar img {
-        top: -10%;
-        width: 35%;
-    }
-
-    #homeBannerLinkTitle:hover, #infoReservationLinkTitle:hover {
-        background-color: #f7980b;
-    }
-
-    /* SECTIONS */
-
-    /* rental */
-    #rentalQuoteSection {
-        display: none;
-    }
-
-    #typeRentalImgDiv, #rentalQuotePLarge {
-        display: block;
-    }  
-
-    #typeRentalDiv {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-
-        width: 85%;
-        margin: 0 auto;
-    }
-
-    #typeRentalsSection {
-        margin: 0;
-        width: 60%;
-        text-align: start;
-    }
-
-    #rentalSubTitle, #weatherSubTitle {
-        font-size: 13px;
-    }
-
-    #rentalTitle, #weatherTitle {
-        margin: .4em 0 .8em 0;
-        font-size: 20px;
-        width: 100%;
-        font-weight: 700;
-    }
-
-    #rentalQuotePLarge, #weatherQuotePLarge {
-        font-size: 13px;
-        margin-top: 0;
-        margin-bottom: 2.2em;
-        line-height: 1.5em;
-    }
-
-    #rentalQuotePLarge strong, #weatherQuotePLarge strong {
-        color: var(--yellow);
-    }
-
-    #typeRentalImgDiv {
-        width: 30%;
-    }
-
-    #typeRentalImgDiv img {
-        width: 100%;
-    }
-
-    /* info reservation */
-    #infoReservationSection {
-        background-color: var(--blue);
-
-        padding: 5em 0;
-    }
-
-    #infoReservationTitle {
-        color: white;
-        font-size: 20px;
-        font-weight: 600;
-        width: 70%;
-        margin-bottom: 1.5em;
-    }
-
-    #infoReservationP {
-        font-size: 13px;
-    }
-
-    #infoReservationP, #infoReservationP strong {
-        color: white;
-    }
-
-    #infoReservationLinkTitle {
-        width: 150px;
-        box-shadow: -6px 6px white;
-    }
-
-    /* weather */
-    #weatherImgDiv, #weatherQuotePLarge {
-        display: block;
-    }
-
-    #weatherQuoteSection {
-        display: none;
-    }
-
-    #weatherMainDiv {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-
-        width: 85%;
-        margin: 0 auto;
-    }
-
-    #weatherImgDiv {
-        width: 30%;
-    }
-
-    #weatherImgDiv img {
-        width: 100%;
-    }
-
-    #weatherSection {
-        width: 57%;
-        margin: 0;
-        padding: 0;
-    }
-
-    #weatherSubTitle {
-        margin: 0;
-    }
-
-
-
-
-}
