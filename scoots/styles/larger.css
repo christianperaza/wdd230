@@ -14,7 +14,7 @@
         display: none;
     }
 
-    #logo {
+    #logo, #logoFooter {
         font-size: 23px;
     }
 
@@ -130,6 +130,11 @@
 
 @media screen and (min-width: 1200px) {
 
+    #closeableMessageP {
+        font-size: 14px;
+    }
+
+
     /* --------- HEADER --------- */
     #largeNavList {
         width: 350px;
@@ -144,9 +149,13 @@
         margin-top: 6%;
     }
 
+    #homeHeader, #homeBannerTitles {
+        width: 80%;
+    }
+
 
     #homeBannerH1 {
-        width: 35%;
+        width: 40%;
     }
 
     #homeBannerP {
@@ -156,14 +165,15 @@
 
     /* images */
     #homeBannerImg img {
-        width: 40%;
-        top: 15%;
+        width: 54%;
+        top: 25%;
         border-radius: 10em 0 0 10em;
     }
 
     #homeBannerImgCar img {
-        top: -6%;
-        width: 28%;
+        top: -3%;
+        right: 5%;
+        width: 40%;
     }
 
     /* --------- SECTIONS --------- */
@@ -173,16 +183,16 @@
     }
 
     #rentalSubTitle, #weatherSubTitle {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     #rentalTitle, #weatherTitle {
-        font-size: 33px;
+        font-size: 30px;
         width: 90%;
     }
 
     #rentalQuotePLarge, #weatherQuotePLarge {
-        font-size: 15px;
+        font-size: 14px;
         width: 80%;
     }
 
@@ -191,11 +201,15 @@
     }
 
     .rentalName {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     #weatherTitle, #weatherQuotePLarge {
         width: 95%;
+    }
+
+    #weatherMainDiv {
+        padding-top: 2em;
     }
 
     
@@ -212,6 +226,10 @@
         font-size: 14px;
     }
     /* info reservation */
+    #infoReservationSection {
+        margin: 6em auto 5em auto;
+    }
+
     #infoReservationTitle {
         font-size: 33px;
     }
@@ -223,5 +241,30 @@
     #infoReservationLinkTitle {
         font-size: 15px;
     }
+
+    /* --------- FOOTER --------- */
+
+    #footerHome {
+        margin-top: 13em;
+        padding: 4em 0 8em 0;
+    }
+
+    .footerTitle, .footerInfoItems p {
+        font-size: 14px;
+    }
+
+    .footerIconsDiv {
+        width: 4%;
+    }
+
+    .footerLinkItemsLarge {
+        font-size: 14px;
+    }
+
+    #infoLinksFooterLargeDiv {
+        margin-bottom: 4em;
+    }
+
+
 
 }
