@@ -67,7 +67,7 @@
 
     /* link */
     #homeBannerLinkTitle {
-        font-size: 14px;
+        font-size: 15px;
         margin-top: 2em;
         width: 150px;
     }
@@ -151,7 +151,7 @@
 
     #homeBannerP {
         width: 40%;
-        font-size: 16px;
+        font-size: 15px;
     }
 
     /* images */
@@ -168,7 +168,60 @@
 
     /* --------- SECTIONS --------- */
 
-    /* type of rentals */
+    #typeRentalDiv, #weatherMainDiv {
+        width: 70%;
+    }
+
+    #rentalSubTitle, #weatherSubTitle {
+        font-size: 15px;
+    }
+
+    #rentalTitle, #weatherTitle {
+        font-size: 33px;
+        width: 90%;
+    }
+
+    #rentalQuotePLarge, #weatherQuotePLarge {
+        font-size: 15px;
+        width: 80%;
+    }
+
+    #typeRentalsSection {
+        width: 55%;
+    }
+
+    .rentalName {
+        font-size: 15px;
+    }
+
+    #weatherTitle, #weatherQuotePLarge {
+        width: 95%;
+    }
+
     
+
+    #weatherSection {
+        width: 60%;
+    }
+
+    #weatherDiv {
+        width: 80%;
+    }
+
+    #currentDescription, #currentDate, #currentHumidity, .forecastTitle, #forecastTemp, #forecastDescription {
+        font-size: 14px;
+    }
+    /* info reservation */
+    #infoReservationTitle {
+        font-size: 33px;
+    }
+
+    #infoReservationP {
+        font-size: 15px;
+    }
+
+    #infoReservationLinkTitle {
+        font-size: 15px;
+    }
 
 }

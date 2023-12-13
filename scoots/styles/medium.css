@@ -250,6 +250,11 @@
         margin: 0;
     }
 
+    #currentDescription, #currentDate, #currentHumidity, .forecastTitle, #forecastTemp, #forecastDescription {
+        font-size: 13px;
+    }
+    
+
 
     /* --------- FOOTER --------- */
 
